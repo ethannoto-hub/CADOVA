@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadova — Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page-explore">
+  <header class="site-header sticky">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Accueil Cadova">Cadova</a>
+      <div class="header-search">
+        <form id="exploreSearchForm" class="search-bar" role="search">
+          <label class="sr-only" for="exploreSearch">Recherche</label>
+          <input id="exploreSearch" type="search" name="q" placeholder="Chercher: casque, plaid, Lego, parfum..." aria-label="Rechercher un cadeau" />
+          <button type="submit" class="btn btn-primary">Rechercher</button>
+        </form>
+      </div>
+      <nav class="desktop-nav">
+        <a href="index.html">Accueil</a>
+        <a href="explore.html" class="active">Explorer</a>
+        <a href="#favoris">Favoris</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container explore-hero slab">
+      <div class="hero-top">
+        <div>
+          <p class="eyebrow">Explorer</p>
+          <h1>Cadova place le cadeau sûr en premier.</h1>
+          <p class="lead">Tape un mot-clé ou choisis un budget: le produit recommandé reste en tête pour éviter la surcharge.</p>
+        </div>
+        <div class="pill-row">
+          <button class="pill" data-intent="budget:small">-25 €</button>
+          <button class="pill" data-intent="budget:medium">25-75 €</button>
+          <button class="pill" data-intent="budget:large">75-200 €</button>
+          <button class="pill" data-intent="budget:wow">200 €+</button>
+          <button class="pill" data-intent="occasion:Noel">Noël</button>
+          <button class="pill" data-intent="occasion:Anniversaire">Anniversaire</button>
+          <button class="pill" data-intent="theme:gamer">Gaming</button>
+          <button class="pill" data-intent="theme:cosy">Cosy</button>
+        </div>
+        <div class="sort-row">
+          <label for="triSelect">Trier</label>
+          <select id="triSelect">
+            <option value="auto">Auto (Cadova)</option>
+            <option value="prix-asc">Prix croissant</option>
+            <option value="prix-desc">Prix décroissant</option>
+            <option value="note">Mieux notés</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <section class="container recommended-wrap slab">
+      <article class="hero-card primary" id="recCard">
+        <div class="badge">Recommandé par Cadova</div>
+        <div class="card-media">
+          <img id="recImage" src="" alt="Produit recommandé" />
+        </div>
+        <div class="card-body">
+          <p class="trust-copy">Choix sûr · avis fiables</p>
+          <h2 id="recName">Suggestion phare</h2>
+          <p id="recDesc" class="muted"></p>
+          <div class="meta">
+            <span id="recPrice" class="price"></span>
+            <span id="recNote" class="note"></span>
+          </div>
+          <div class="cta-row">
+            <a id="recCta" class="btn btn-primary" href="#" target="_blank" rel="nofollow sponsored">Voir le cadeau</a>
+            <button id="recFav" class="fav ghost" type="button" aria-label="Ajouter aux favoris">♡</button>
+          </div>
+          <p class="microcopy">Affiché en premier même après la recherche.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="container results slab" aria-live="polite">
+      <div class="section-head">
+        <div>
+          <h3>Autres idées</h3>
+          <p class="muted">Trié pour rester clair : pertinence, avis, puis prix.</p>
+        </div>
+      </div>
+      <div id="resultsList" class="cards-stack"></div>
+    </section>
+
+    <section id="favoris" class="container favorites slab">
+      <div class="section-head">
+        <div>
+          <h3>Favoris</h3>
+          <p class="muted">Ton panier d’idées rapides.</p>
+        </div>
+        <div class="fav-counter" id="favCounter">0</div>
+      </div>
+      <div id="favoritesList" class="cards-stack"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>En tant que Partenaire Amazon, Cadova réalise un bénéfice sur les achats remplissant les conditions requises.</p>
+    </div>
+  </footer>
+
+  <nav class="bottom-nav">
+    <a href="index.html" class="nav-item">
+      <span aria-hidden="true">🏠</span>
+      <span>Accueil</span>
+    </a>
+    <a href="explore.html" class="nav-item active">
+      <span aria-hidden="true">🔍</span>
+      <span>Explorer</span>
+    </a>
+    <a href="#favoris" class="nav-item">
+      <span aria-hidden="true">★</span>
+      <span>Favoris</span>
+    </a>
+  </nav>
+
+  <script src="app.js"></script>
+</body>
+</html>
