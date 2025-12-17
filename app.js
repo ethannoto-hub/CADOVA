@@ -1,4 +1,4 @@
-// Base produits (peut Ãªtre Ã©tendue Ã  ~40+ par catÃ©gorie)
+﻿// Base produits (peut Ãªtre Ã©tendue Ã  ~40+ par catÃ©gorie)
 const produits = [
   {
     id: "sony-wh1000xm5",
