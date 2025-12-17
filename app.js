@@ -1,4 +1,4 @@
-﻿// Base produits (peut Ãªtre Ã©tendue Ã  ~40+ par catÃ©gorie)
+// Base produits (peut Ãªtre Ã©tendue Ã  ~40+ par catÃ©gorie)
 const produits = [
   {
     id: "sony-wh1000xm5",
@@ -136,7 +136,7 @@ const produits = [
     occasion: "Noel",
     motscles: ["console", "gaming", "famille"],
     prix: 319,
-    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80",
+    image: "https://m.media-amazon.com/images/I/61LDCjdx9XL._AC_SL1500_.jpg",
     lien_affilie: "https://www.amazon.fr/Nintendo-Console-dAccueil-Manettes-Blanches/dp/B098RJXBTY?ref_=dp_pba_bcd_vb",
     note: 4.9,
     avis: 64000,
