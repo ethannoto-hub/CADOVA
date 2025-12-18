@@ -1,182 +1,211 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cadova · Explorer</title>
+  <title>Cadova · Guide cadeau rapide</title>
+  <meta name="description" content="Cadova choisit pour toi le cadeau le plus sûr. Un seul bon choix, puis le reste si tu veux." />
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body class="page-explore theme-dark">
-
-  <!-- HEADER -->
+<body class="page-home">
+  <!-- Header -->
   <header class="site-header sticky">
     <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Accueil Cadova">
+        <span class="brand-mark" aria-hidden="true">C</span>
+        <span class="brand-name">Cadova</span>
+      </a>
 
-      <div class="brand-wrap">
-        <a class="brand" href="index.html" aria-label="Accueil Cadova">Cadova</a>
-        <button id="themeToggle" class="theme-toggle" aria-label="Changer le thème">🌙</button>
+      <form id="homeSearchForm" class="search-bar" role="search" autocomplete="off">
+        <label class="sr-only" for="homeSearch">Recherche</label>
+        <input
+          id="homeSearch"
+          type="search"
+          name="q"
+          placeholder="Rechercher un cadeau (ex: casque, plaid, Lego)"
+          aria-label="Rechercher un cadeau"
+        />
+        <button type="submit" class="btn btn-primary">Rechercher</button>
+      </form>
+
+      <div class="header-actions">
+        <button id="themeToggle" class="icon-btn" type="button" aria-label="Basculer le thème">
+          <span class="icon" aria-hidden="true">🌙</span>
+        </button>
+
+        <nav class="desktop-nav" aria-label="Navigation">
+          <a href="index.html" class="active">Accueil</a>
+          <a href="explore.html">Explorer</a>
+          <a href="explore.html#favoris">Favoris</a>
+        </nav>
       </div>
-
-      <div class="header-search">
-        <form id="exploreSearchForm" class="search-bar" role="search">
-          <label class="sr-only" for="exploreSearch">Recherche</label>
-          <input
-            id="exploreSearch"
-            type="search"
-            name="q"
-            placeholder="Casque, plaid, Lego, parfum…"
-            aria-label="Rechercher un cadeau"
-          />
-          <button type="submit" class="btn btn-primary">Rechercher</button>
-        </form>
-      </div>
-
-      <nav class="desktop-nav">
-        <a href="index.html">Accueil</a>
-        <a href="explore.html" class="active">Explorer</a>
-        <a href="#favoris">Favoris</a>
-      </nav>
-
     </div>
   </header>
 
-  <!-- MAIN -->
   <main>
-
-    <!-- HERO -->
-    <section class="container explore-hero slab">
-      <div class="hero-top">
-        <div>
-          <p class="eyebrow">Explorer</p>
+    <!-- Hero -->
+    <section class="container slab hero">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Guide express</p>
           <h1>Un seul bon choix. Le reste, si tu veux.</h1>
           <p class="lead">
-            Cadova place toujours le cadeau le plus sûr en premier pour éviter la surcharge.
+            Tu tapes un mot ou tu choisis un budget. Cadova met le cadeau le plus sûr en premier,
+            sans te faire comparer 20 pages.
           </p>
-        </div>
 
-        <div class="pill-row">
-          <button class="pill" data-intent="budget:small">-25 €</button>
-          <button class="pill" data-intent="budget:medium">25–75 €</button>
-          <button class="pill" data-intent="budget:large">75–200 €</button>
-          <button class="pill" data-intent="budget:wow">200 €+</button>
-          <button class="pill" data-intent="occasion:Noel">Noël</button>
-          <button class="pill" data-intent="occasion:Anniversaire">Anniversaire</button>
-          <button class="pill" data-intent="theme:gamer">Gaming</button>
-          <button class="pill" data-intent="theme:cosy">Cosy</button>
-        </div>
-
-        <div class="sort-row">
-          <label for="triSelect">Trier</label>
-          <select id="triSelect">
-            <option value="auto">Auto (Cadova)</option>
-            <option value="prix-asc">Prix croissant</option>
-            <option value="prix-desc">Prix décroissant</option>
-            <option value="note">Mieux notés</option>
-          </select>
-        </div>
-      </div>
-    </section>
-
-    <!-- RECOMMANDÉ -->
-    <section class="container recommended-wrap slab">
-      <article class="hero-card primary" id="recCard">
-        <div class="badge">Recommandé par Cadova</div>
-
-        <div class="card-media">
-          <img id="recImage" src="" alt="Produit recommandé" />
-        </div>
-
-        <div class="card-body">
-          <p class="trust-copy">Choix sûr · avis fiables</p>
-          <h2 id="recName">Suggestion phare</h2>
-          <p id="recDesc" class="muted"></p>
-
-          <div class="meta">
-            <span id="recPrice" class="price"></span>
-            <span id="recNote" class="note"></span>
+          <div class="pill-row" aria-label="Filtres budget">
+            <button class="pill" type="button" data-intent="budget:small">-25 €</button>
+            <button class="pill" type="button" data-intent="budget:medium">25-75 €</button>
+            <button class="pill" type="button" data-intent="budget:large">75-200 €</button>
+            <button class="pill" type="button" data-intent="budget:wow">200 €+</button>
           </div>
 
-          <div class="cta-row">
-            <a
-              id="recCta"
-              class="btn btn-primary"
-              href="#"
-              target="_blank"
-              rel="nofollow sponsored"
-            >
-              Voir le cadeau
-            </a>
-            <button
-              id="recFav"
-              class="fav ghost"
-              type="button"
-              aria-label="Ajouter aux favoris"
-            >
-              ☆
-            </button>
+          <div class="pill-row" aria-label="Filtres rapides">
+            <button class="pill" type="button" data-intent="occasion:Noel">Noël</button>
+            <button class="pill" type="button" data-intent="occasion:Anniversaire">Anniversaire</button>
+            <button class="pill" type="button" data-intent="theme:hightech">Tech</button>
+            <button class="pill" type="button" data-intent="theme:cosy">Cosy</button>
+            <button class="pill" type="button" data-intent="theme:gamer">Gaming</button>
           </div>
 
-          <p class="microcopy">Toujours affiché en premier.</p>
+          <div class="micro">
+            <span class="dot" aria-hidden="true"></span>
+            <span>Objectif : 1 clic vers le bon cadeau.</span>
+          </div>
         </div>
-      </article>
+
+        <!-- Best pick -->
+        <article class="hero-card primary" id="bestCard" aria-label="Meilleure suggestion Cadova">
+          <div class="badge">Meilleur choix</div>
+
+          <div class="card-media">
+            <img id="bestImage" src="" alt="Produit recommandé" loading="lazy" />
+          </div>
+
+          <div class="card-body">
+            <p class="trust-copy">Sélection Cadova · cadeau sûr</p>
+
+            <h2 id="bestName">Chargement…</h2>
+            <p id="bestDesc" class="muted"></p>
+
+            <div class="meta">
+              <span id="bestPrice" class="price"></span>
+              <span id="bestNote" class="note"></span>
+            </div>
+
+            <div class="cta-row">
+              <a id="bestCta" class="btn btn-primary" href="#" target="_blank" rel="nofollow sponsored">
+                Voir le cadeau
+              </a>
+              <button id="bestFav" class="fav ghost" type="button" aria-label="Ajouter aux favoris">☆</button>
+            </div>
+
+            <p class="microcopy">Lien direct. Pas de pop-up. Pas de blabla.</p>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <!-- AUTRES RÉSULTATS -->
-    <section class="container results slab" aria-live="polite">
+    <!-- Price categories -->
+    <section class="container slab">
       <div class="section-head">
         <div>
-          <h3>Autres idées</h3>
-          <p class="muted">
-            Trié pour rester clair : pertinence, avis, puis prix.
-          </p>
+          <h3>Catégories de prix</h3>
+          <p class="muted">Si tu veux juste choisir un budget et basta.</p>
         </div>
+        <a class="text-link" href="explore.html">Tout explorer</a>
       </div>
 
-      <div id="resultsList" class="cards-stack"></div>
+      <div class="price-grid">
+        <button class="price-card" type="button" data-intent="budget:small">
+          <span class="label">Petit budget</span>
+          <strong>-25 €</strong>
+          <span class="hint">Petites attentions</span>
+        </button>
+
+        <button class="price-card" type="button" data-intent="budget:medium">
+          <span class="label">Confort</span>
+          <strong>25-75 €</strong>
+          <span class="hint">Rapport qualité/prix</span>
+        </button>
+
+        <button class="price-card" type="button" data-intent="budget:large">
+          <span class="label">Belle occasion</span>
+          <strong>75-200 €</strong>
+          <span class="hint">Cadeau marquant</span>
+        </button>
+
+        <button class="price-card" type="button" data-intent="budget:wow">
+          <span class="label">Exceptionnel</span>
+          <strong>200 €+</strong>
+          <span class="hint">Premium</span>
+        </button>
+      </div>
     </section>
 
-    <!-- FAVORIS -->
-    <section id="favoris" class="container favorites slab">
+    <!-- Quick picks -->
+    <section class="container slab">
       <div class="section-head">
         <div>
-          <h3>Favoris</h3>
-          <p class="muted">Ton panier d’idées rapides.</p>
+          <h3>Suggestions rapides</h3>
+          <p class="muted">Les choix les plus “safe” selon les avis.</p>
         </div>
-        <div class="fav-counter" id="favCounter">0</div>
       </div>
-
-      <div id="favoritesList" class="cards-stack"></div>
+      <div id="quickList" class="cards-stack tight" aria-live="polite"></div>
     </section>
-
   </main>
 
-  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>
-        En tant que Partenaire Amazon, Cadova réalise un bénéfice sur les achats remplissant les conditions requises.
-      </p>
+      <p>En tant que Partenaire Amazon, Cadova réalise un bénéfice sur les achats remplissant les conditions requises.</p>
     </div>
   </footer>
 
-  <!-- NAV MOBILE -->
-  <nav class="bottom-nav">
-    <a href="index.html" class="nav-item">
-      <span>⌂</span>
+  <!-- Bottom nav (mobile) -->
+  <nav class="bottom-nav" aria-label="Navigation mobile">
+    <a href="index.html" class="nav-item active">
+      <span aria-hidden="true">⌂</span>
       <span>Accueil</span>
     </a>
-    <a href="explore.html" class="nav-item active">
-      <span>☆</span>
+    <a href="explore.html" class="nav-item">
+      <span aria-hidden="true">☆</span>
       <span>Explorer</span>
     </a>
-    <a href="#favoris" class="nav-item">
-      <span>♥</span>
+    <a href="explore.html#favoris" class="nav-item">
+      <span aria-hidden="true">♥</span>
       <span>Favoris</span>
     </a>
   </nav>
 
-  <!-- SCRIPT -->
+  <!-- Theme toggle (fonctionne même avant le nouveau JS) -->
+  <script>
+    (function () {
+      const KEY = "cadova_theme_v1";
+      const root = document.documentElement;
+      const btn = document.getElementById("themeToggle");
+      const icon = btn ? btn.querySelector(".icon") : null;
+
+      function apply(theme) {
+        root.setAttribute("data-theme", theme);
+        if (icon) icon.textContent = theme === "dark" ? "🌙" : "☀️";
+      }
+
+      const saved = localStorage.getItem(KEY);
+      if (saved === "light" || saved === "dark") apply(saved);
+
+      if (btn) {
+        btn.addEventListener("click", () => {
+          const current = root.getAttribute("data-theme") || "dark";
+          const next = current === "dark" ? "light" : "dark";
+          localStorage.setItem(KEY, next);
+          apply(next);
+        });
+      }
+    })();
+  </script>
+
   <script src="app.js"></script>
 </body>
 </html>
