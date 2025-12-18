@@ -207,5 +207,106 @@ img {
 @media (min-width: 900px) {
   .bottom-nav {
     display: none;
+    /* ======================================================
+   CADOVA – CSS PATCH (DARK / LIGHT + MOBILE FIX)
+   À coller À LA FIN du fichier style.css
+====================================================== */
+
+/* ---------- THEMES ---------- */
+:root {
+  --bg-main: #0a0f19;
+  --panel-main: rgba(255,255,255,0.06);
+  --text-main: #e8edf7;
+}
+
+[data-theme="light"] {
+  --bg-main: #f6f7fb;
+  --panel-main: #ffffff;
+  --text-main: #0f1720;
+  --muted: #4b5563;
+  --border: rgba(0,0,0,0.1);
+}
+
+body {
+  background: var(--bg-main);
+  color: var(--text-main);
+}
+
+/* ---------- HEADER FIX ---------- */
+.site-header {
+  background: var(--panel-main);
+}
+
+/* ---------- THEME TOGGLE ---------- */
+.theme-toggle {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.06);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.theme-toggle:hover {
+  background: rgba(255,255,255,0.12);
+  transform: translateY(-1px);
+}
+
+/* ---------- HERO IMAGE FIX ---------- */
+.hero-card img,
+.card img {
+  object-fit: contain;
+  max-height: 320px;
+  background: #fff;
+}
+
+/* ---------- MOBILE READABILITY ---------- */
+@media (max-width: 768px) {
+
+  h1 {
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+
+  .lead {
+    font-size: 0.95rem;
+  }
+
+  .hero-card.primary {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    grid-template-columns: 1fr;
+  }
+
+  .card img {
+    aspect-ratio: 16 / 9;
+  }
+
+  .search-bar input {
+    font-size: 0.95rem;
+  }
+}
+
+/* ---------- LIGHT MODE CARDS ---------- */
+[data-theme="light"] .card,
+[data-theme="light"] .hero-card {
+  background: #ffffff;
+  color: #0f1720;
+}
+
+/* ---------- BUTTONS ---------- */
+[data-theme="light"] .btn-primary {
+  color: #0f1720;
+}
+
+/* ======================================================
+   END PATCH
+====================================================== */
   }
 }
