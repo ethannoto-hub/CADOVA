@@ -1,4 +1,4 @@
-﻿// Base produits (peut Ãªtre Ã©tendue Ã  ~40+ par catÃ©gorie)
+// Base produits (peut Ãªtre Ã©tendue Ã  ~40+ par catÃ©gorie)
 const produits = [
   {
     id: "sony-wh1000xm5",
@@ -162,7 +162,7 @@ const produits = [
   },
   {
     id: "jeu-codenames",
-    nom: "Jeu de sociÃ©tÃ© Codenames",
+    nom: "Jeu de société Codenames",
     description: "Parties rapides 4+, simple Ã  expliquer, rejouable.",
     categorie: "Famille",
     occasion: "Famille",
