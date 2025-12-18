@@ -1,196 +1,169 @@
-// =======================
-// Cadova — app.js
-// =======================
-
-// ⚠️ IMPORTANT : enregistre ce fichier en UTF-8 (sinon accents cassés)
-
-const STORAGE_KEY = "cadova_favoris_v1";
-const THEME_KEY = "cadova_theme_v1"; // "light" | "dark"
-
-// -----------------------
-// Base produits (peut être étendue à ~40+ par catégorie)
-// -----------------------
+Ca bg c le java script.    // Base produits (peut Ãªtre Ã©tendue Ã  ~40+ par catÃ©gorie)
 const produits = [
   {
     id: "sony-wh1000xm5",
     nom: "Casque sans fil Sony WH-1000XM5",
-    description: "Réduction de bruit très efficace, idéal bureau et voyage.",
+    description: "RÃ©duction de bruit trÃ¨s efficace, idÃ©al bureau et voyage.",
     categorie: "High-tech",
     occasion: "Anniversaire",
     motscles: ["casque", "sans fil", "musique", "voyage"],
     prix: 349,
-    image:
-      "https://images.unsplash.com/photo-1618365908648-e71bd5716cba?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1618365908648-e71bd5716cba?auto=format&fit=crop&w=800&q=80",
     lien_affilie: "https://www.amazon.fr/s?k=sony+wh1000xm5&tag=cadova-21",
     note: 4.7,
     avis: 12543,
     recommande: true,
     theme: "hightech",
-    polyvalent: true,
+    polyvalent: true
   },
   {
     id: "bose-qc-ultra",
     nom: "Bose QuietComfort Ultra",
-    description: "Son équilibré, réduit le bruit en avion et en open space.",
+    description: "Son Ã©quilibrÃ©, rÃ©duit le bruit en avion et en open space.",
     categorie: "High-tech",
     occasion: "Anniversaire",
     motscles: ["casque", "travel", "bureau"],
     prix: 349,
-    image:
-      "https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=800&q=80",
-    lien_affilie:
-      "https://www.amazon.fr/s?k=bose+quietcomfort+ultra&tag=cadova-21",
+    image: "https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=800&q=80",
+    lien_affilie: "https://www.amazon.fr/s?k=bose+quietcomfort+ultra&tag=cadova-21",
     note: 4.6,
     avis: 8421,
     recommande: false,
     theme: "hightech",
-    polyvalent: true,
+    polyvalent: true
   },
   {
     id: "kindle-paperwhite",
     nom: "Kindle Paperwhite 16 Go",
-    description: "Liseuse étanche longue autonomie, cadeau sûr pour lecteurs.",
+    description: "Liseuse Ã©tanche longue autonomie, cadeau sÃ»r pour lecteurs.",
     categorie: "Culture",
     occasion: "Noel",
     motscles: ["lecture", "voyage", "livres"],
     prix: 169,
-    image:
-      "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=800&q=80",
-    lien_affilie:
-      "https://www.amazon.fr/s?k=kindle+paperwhite+16+go&tag=cadova-21",
+    image: "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=800&q=80",
+    lien_affilie: "https://www.amazon.fr/s?k=kindle+paperwhite+16+go&tag=cadova-21",
     note: 4.8,
     avis: 50510,
     recommande: true,
     theme: "culture",
-    polyvalent: true,
+    polyvalent: true
   },
   {
     id: "apple-watch-se",
     nom: "Apple Watch SE (GPS)",
-    description:
-      "Notifications, santé, sport simple à lire, bon cadeau généraliste.",
+    description: "Notifications, santÃ©, sport simple Ã  lire, bon cadeau gÃ©nÃ©raliste.",
     categorie: "High-tech",
     occasion: "Anniversaire",
     motscles: ["montre", "sport", "apple"],
     prix: 279,
-    image:
-      "https://images.unsplash.com/photo-1544117519-31a4b719223d?auto=format&fit=crop&w=800&q=80",
-    lien_affilie:
-      "https://www.amazon.fr/s?k=apple+watch+se+gps&tag=cadova-21",
+    image: "https://images.unsplash.com/photo-1544117519-31a4b719223d?auto=format&fit=crop&w=800&q=80",
+    lien_affilie: "https://www.amazon.fr/s?k=apple+watch+se+gps&tag=cadova-21",
     note: 4.7,
     avis: 22310,
     recommande: false,
     theme: "hightech",
-    polyvalent: true,
+    polyvalent: true
   },
   {
     id: "rituals-sakura",
     nom: "Coffret Rituals Sakura",
-    description: "Routine bien-être parfum doux, packaging premium.",
-    categorie: "Bien-être",
+    description: "Routine bien-Ãªtre parfum doux, packaging premium.",
+    categorie: "Bien-Ãªtre",
     occasion: "Saint-Valentin",
     motscles: ["spa", "soin", "relax"],
     prix: 45,
-    image:
-      "https://images.unsplash.com/photo-1506617420156-8e4536971650?auto=format&fit=crop&w=800&q=80",
-    lien_affilie:
-      "https://www.amazon.fr/s?k=rituals+sakura+coffret&tag=cadova-21",
+    image: "https://images.unsplash.com/photo-1506617420156-8e4536971650?auto=format&fit=crop&w=800&q=80",
+    lien_affilie: "https://www.amazon.fr/s?k=rituals+sakura+coffret&tag=cadova-21",
     note: 4.7,
     avis: 18400,
     recommande: true,
     theme: "cosy",
-    polyvalent: true,
+    polyvalent: true
   },
   {
     id: "lego-bouquet",
     nom: "Lego Bouquet de Fleurs",
-    description: "Alternative déco durable, activité zen à monter.",
-    categorie: "Déco",
+    description: "Alternative dÃ©co durable, activitÃ© zen Ã  monter.",
+    categorie: "DÃ©co",
     occasion: "Fete des meres",
     motscles: ["lego", "fleurs", "deco"],
     prix: 49,
-    image:
-      "https://images.unsplash.com/photo-1523419400524-2230bcb391a2?auto=format&fit=crop&w=800&q=80",
-    lien_affilie:
-      "https://www.amazon.fr/s?k=lego+bouquet+fleurs&tag=cadova-21",
+    image: "https://images.unsplash.com/photo-1523419400524-2230bcb391a2?auto=format&fit=crop&w=800&q=80",
+    lien_affilie: "https://www.amazon.fr/s?k=lego+bouquet+fleurs&tag=cadova-21",
     note: 4.9,
     avis: 35600,
     recommande: true,
     theme: "deco",
-    polyvalent: true,
+    polyvalent: true
   },
   {
     id: "instax-mini-12",
     nom: "Appareil photo Instax Mini 12",
-    description: "Photos instantanées fun, facile pour tous les âges.",
+    description: "Photos instantanÃ©es fun, facile pour tous les Ã¢ges.",
     categorie: "Loisirs",
     occasion: "Anniversaire",
     motscles: ["photo", "instant", "souvenir"],
     prix: 79,
-    image:
-      "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=800&q=80",
     lien_affilie: "https://www.amazon.fr/s?k=instax+mini+12&tag=cadova-21",
     note: 4.7,
     avis: 11200,
     recommande: false,
     theme: "fun",
-    polyvalent: true,
+    polyvalent: true
   },
   {
     id: "jbl-go-4",
     nom: "Enceinte Bluetooth JBL Go 4",
-    description: "Mini format, gros son pour maison et déplacements.",
+    description: "Mini format, gros son pour maison et dÃ©placements.",
     categorie: "High-tech",
     occasion: "Noel",
     motscles: ["enceinte", "musique", "portable"],
     prix: 49,
-    image:
-      "https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=800&q=80",
     lien_affilie: "https://www.amazon.fr/s?k=jbl+go+4&tag=cadova-21",
     note: 4.6,
     avis: 18700,
     recommande: false,
     theme: "hightech",
-    polyvalent: true,
+    polyvalent: true
   },
   {
     id: "switch-oled",
     nom: "Nintendo Switch OLED",
-    description: "Console hybride famille/solo, valeur sûre gaming.",
+    description: "Console hybride famille/solo, valeur sÃ»re gaming.",
     categorie: "Gaming",
     occasion: "Noel",
     motscles: ["console", "gaming", "famille"],
     prix: 319,
     image: "https://m.media-amazon.com/images/I/61LDCjdx9XL._AC_SL1500_.jpg",
-    lien_affilie:
-      "https://www.amazon.fr/Nintendo-Console-dAccueil-Manettes-Blanches/dp/B098RJXBTY?ref_=dp_pba_bcd_vb",
+    lien_affilie: "https://www.amazon.fr/Nintendo-Console-dAccueil-Manettes-Blanches/dp/B098RJXBTY?ref_=dp_pba_bcd_vb",
     note: 4.9,
     avis: 64000,
     recommande: true,
     theme: "gamer",
-    polyvalent: true,
+    polyvalent: true
   },
   {
     id: "mx-master-3s",
     nom: "Souris Logitech MX Master 3S",
-    description: "Productivité silencieuse, multi-appareils, ergonomique.",
+    description: "ProductivitÃ© silencieuse, multi-appareils, ergonomique.",
     categorie: "High-tech",
     occasion: "Anniversaire",
     motscles: ["bureau", "souris", "productivite"],
     prix: 119,
-    image:
-      "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?auto=format&fit=crop&w=800&q=80",
     lien_affilie: "https://www.amazon.fr/s?k=logitech+mx+master+3s&tag=cadova-21",
     note: 4.8,
     avis: 22100,
     recommande: false,
     theme: "hightech",
-    polyvalent: true,
+    polyvalent: true
   },
   {
     id: "jeu-codenames",
     nom: "Jeu de société Codenames",
-    description: "Parties rapides 4+, simple à expliquer, rejouable.",
+    description: "Parties rapides 4+, simple Ã  expliquer, rejouable.",
     categorie: "Famille",
     occasion: "Famille",
     motscles: ["jeu", "famille", "amis"],
@@ -201,150 +174,140 @@ const produits = [
     avis: 29000,
     recommande: true,
     theme: "fun",
-    polyvalent: true,
+    polyvalent: true
   },
   {
     id: "plaid-doux",
     nom: "Plaid en fausse fourrure",
-    description: "Texture cocooning, couleur neutre, format généreux.",
-    categorie: "Déco",
+    description: "Texture cocooning, couleur neutre, format gÃ©nÃ©reux.",
+    categorie: "DÃ©co",
     occasion: "Noel",
     motscles: ["plaid", "cosy", "maison"],
     prix: 39,
-    image:
-      "https://images.unsplash.com/photo-1473186578172-c141e6798cf4?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1473186578172-c141e6798cf4?auto=format&fit=crop&w=800&q=80",
     lien_affilie: "https://www.amazon.fr/s?k=plaid+fausse+fourrure&tag=cadova-21",
     note: 4.6,
     avis: 5100,
     recommande: false,
     theme: "cosy",
-    polyvalent: true,
+    polyvalent: true
   },
   {
     id: "gourde-inox",
     nom: "Gourde isotherme inox 500 ml",
-    description: "Garde chaud/froid, design simple, zéro fuite.",
+    description: "Garde chaud/froid, design simple, zÃ©ro fuite.",
     categorie: "Sport",
     occasion: "Sport",
     motscles: ["gourde", "quotidien", "sport"],
     prix: 24,
-    image:
-      "https://images.unsplash.com/photo-1515543237350-b3eea1ec8082?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1515543237350-b3eea1ec8082?auto=format&fit=crop&w=800&q=80",
     lien_affilie: "https://www.amazon.fr/s?k=gourde+isotherme+inox&tag=cadova-21",
     note: 4.7,
     avis: 8300,
     recommande: false,
     theme: "sport",
-    polyvalent: true,
+    polyvalent: true
   },
   {
     id: "cocotte-staub",
     nom: "Cocotte en fonte Staub 24 cm",
-    description: "Pour plats familiaux, durable et indémodable.",
+    description: "Pour plats familiaux, durable et indÃ©modable.",
     categorie: "Cuisine",
     occasion: "Parents",
     motscles: ["cuisine", "famille", "repas"],
     prix: 199,
-    image:
-      "https://images.unsplash.com/photo-1481391032119-d89fee407e44?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1481391032119-d89fee407e44?auto=format&fit=crop&w=800&q=80",
     lien_affilie: "https://www.amazon.fr/s?k=cocotte+staub+24+cm&tag=cadova-21",
     note: 4.8,
     avis: 7200,
     recommande: false,
     theme: "cuisine",
-    polyvalent: true,
+    polyvalent: true
   },
   {
     id: "kit-sushi",
     nom: "Kit sushi complet",
-    description:
-      "Tapis, moules, recettes : prêt à offrir pour cuisiner ensemble.",
+    description: "Tapis, moules, recettes: prÃªt Ã  offrir pour cuisiner ensemble.",
     categorie: "Cuisine",
     occasion: "Anniversaire",
     motscles: ["sushi", "cuisine", "diy"],
     prix: 35,
-    image:
-      "https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&q=80",
     lien_affilie: "https://www.amazon.fr/s?k=kit+sushi&tag=cadova-21",
     note: 4.4,
     avis: 1700,
     recommande: false,
     theme: "cuisine",
-    polyvalent: false,
+    polyvalent: false
   },
   {
     id: "oreiller-memoire",
-    nom: "Oreiller mémoire de forme",
-    description: "Soutien cervical, housse lavable, sommeil amélioré.",
-    categorie: "Bien-être",
+    nom: "Oreiller mÃ©moire de forme",
+    description: "Soutien cervical, housse lavable, sommeil amÃ©liorÃ©.",
+    categorie: "Bien-Ãªtre",
     occasion: "Anniversaire",
     motscles: ["sommeil", "confort", "oreiller"],
     prix: 59,
-    image:
-      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80",
     lien_affilie: "https://www.amazon.fr/s?k=oreiller+memoire+de+forme&tag=cadova-21",
     note: 4.5,
     avis: 6400,
     recommande: false,
     theme: "cosy",
-    polyvalent: true,
+    polyvalent: true
   },
   {
     id: "parfum-frais",
     nom: "Parfum frais mixte 50 ml",
-    description: "Accord léger passe-partout, cadeau sûr.",
-    categorie: "Beauté",
+    description: "Accord lÃ©ger passe-partout, cadeau sÃ»r.",
+    categorie: "BeautÃ©",
     occasion: "Saint-Valentin",
     motscles: ["parfum", "mixte", "quotidien"],
     prix: 25,
-    image:
-      "https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=800&q=80",
     lien_affilie: "https://www.amazon.fr/s?k=parfum+mixte+frais&tag=cadova-21",
     note: 4.4,
     avis: 1300,
     recommande: false,
     theme: "beaute",
-    polyvalent: true,
+    polyvalent: true
   },
   {
     id: "dyson-supersonic",
-    nom: "Sèche-cheveux Dyson Supersonic",
-    description: "Séchage rapide premium, protège les cheveux.",
-    categorie: "Beauté",
+    nom: "SÃ¨che-cheveux Dyson Supersonic",
+    description: "SÃ©chage rapide premium, protÃ¨ge les cheveux.",
+    categorie: "BeautÃ©",
     occasion: "Parents",
     motscles: ["cheveux", "premium", "beaute"],
     prix: 399,
-    image:
-      "https://images.unsplash.com/photo-1506617420156-8e4536971650?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1506617420156-8e4536971650?auto=format&fit=crop&w=800&q=80",
     lien_affilie: "https://www.amazon.fr/s?k=dyson+supersonic&tag=cadova-21",
     note: 4.7,
     avis: 16000,
     recommande: false,
     theme: "beaute",
-    polyvalent: false,
+    polyvalent: false
   },
   {
     id: "lampe-sel",
     nom: "Lampe en sel d'Himalaya",
-    description: "Lumière chaude et relaxante, touche déco nature.",
-    categorie: "Déco",
+    description: "LumiÃ¨re chaude et relaxante, touche dÃ©co nature.",
+    categorie: "DÃ©co",
     occasion: "Noel",
     motscles: ["lampe", "zen", "deco"],
     prix: 29,
-    image:
-      "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80",
     lien_affilie: "https://www.amazon.fr/s?k=lampe+sel+himalaya&tag=cadova-21",
     note: 4.5,
     avis: 5500,
     recommande: false,
     theme: "deco",
-    polyvalent: true,
-  },
+    polyvalent: true
+  }
 ];
 
-// -----------------------
-// Favoris
-// -----------------------
+const STORAGE_KEY = "cadova_favoris_v1";
+
 function loadFavorites() {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
@@ -353,107 +316,22 @@ function loadFavorites() {
     return [];
   }
 }
+
 function saveFavorites(ids) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(Array.from(ids)));
 }
+
 const favoris = new Set(loadFavorites());
 
-// -----------------------
-// Thème (clair/sombre) + swipe
-// -----------------------
-function setTheme(theme) {
-  document.documentElement.setAttribute("data-theme", theme);
-  localStorage.setItem(THEME_KEY, theme);
-
-  const btn = document.getElementById("themeToggle");
-  if (btn) btn.textContent = theme === "dark" ? "🌞" : "🌙";
-}
-
-function initTheme() {
-  const saved = localStorage.getItem(THEME_KEY);
-  if (saved === "dark" || saved === "light") {
-    setTheme(saved);
-    return;
-  }
-  // par défaut : suit le système
-  const prefersDark =
-    window.matchMedia &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches;
-  setTheme(prefersDark ? "dark" : "light");
-}
-
-function setupThemeToggle() {
-  const btn = document.getElementById("themeToggle");
-  if (!btn) return;
-
-  btn.addEventListener("click", () => {
-    const current =
-      document.documentElement.getAttribute("data-theme") || "light";
-    setTheme(current === "dark" ? "light" : "dark");
-  });
-}
-
-function setupThemeSwipe() {
-  // Swipe horizontal pour toggle thème (mobile)
-  let startX = 0;
-  let startY = 0;
-  let startT = 0;
-
-  document.addEventListener(
-    "touchstart",
-    (e) => {
-      const t = e.touches[0];
-      startX = t.clientX;
-      startY = t.clientY;
-      startT = Date.now();
-    },
-    { passive: true }
-  );
-
-  document.addEventListener(
-    "touchend",
-    (e) => {
-      // éviter les swipes dans les inputs / zones scrollables
-      const active = document.activeElement;
-      if (active && (active.tagName === "INPUT" || active.tagName === "TEXTAREA"))
-        return;
-
-      const t = e.changedTouches[0];
-      const dx = t.clientX - startX;
-      const dy = t.clientY - startY;
-      const dt = Date.now() - startT;
-
-      // conditions : swipe rapide + horizontal
-      if (dt > 600) return;
-      if (Math.abs(dx) < 60) return;
-      if (Math.abs(dy) > 60) return;
-
-      const current =
-        document.documentElement.getAttribute("data-theme") || "light";
-      setTheme(current === "dark" ? "light" : "dark");
-    },
-    { passive: true }
-  );
-}
-
-// -----------------------
-// Utils
-// -----------------------
 function formatPrice(price) {
-  return new Intl.NumberFormat("fr-FR", {
-    style: "currency",
-    currency: "EUR",
-    maximumFractionDigits: 0,
-  }).format(price);
+  return new Intl.NumberFormat("fr-FR", { style: "currency", currency: "EUR", maximumFractionDigits: 0 }).format(price);
 }
 
 function ratingLabel(note, avis) {
   if (!note) return "Note disponible";
   const rounded = note.toFixed(1);
-  const avisLabel = avis
-    ? `${avis.toLocaleString("fr-FR")} avis`
-    : "peu d'avis";
-  return `${rounded} ★ | ${avisLabel}`;
+  const avisLabel = avis ? `${avis.toLocaleString("fr-FR")} avis` : "peu d'avis";
+  return `${rounded} * | ${avisLabel}`;
 }
 
 function normalize(text) {
@@ -468,61 +346,49 @@ function matchTokens(product, tokens) {
     product.categorie,
     product.occasion,
     product.theme,
-    ...(product.motscles || []),
+    ...(product.motscles || [])
   ]
     .map(normalize)
     .join(" ");
-  return tokens.every((t) => haystack.includes(t));
+  return tokens.every(t => haystack.includes(t));
 }
 
 function scoreProduct(product, tokens) {
   const base = (product.note || 0) + Math.log((product.avis || 1) + 1) * 0.35;
   const recommendationBoost = product.recommande ? 2.5 : 0;
   const polyvalentBoost = tokens.length <= 1 && product.polyvalent ? 0.6 : 0;
-
   const keywordBoost = tokens.reduce((sum, token) => {
     const matches =
       product.nom.toLowerCase().includes(token) ||
       product.description.toLowerCase().includes(token) ||
-      (product.motscles || []).some((k) => k.toLowerCase().includes(token));
+      (product.motscles || []).some(k => k.toLowerCase().includes(token));
     return sum + (matches ? 0.5 : 0);
   }, 0);
-
   return base + recommendationBoost + polyvalentBoost + keywordBoost;
 }
 
-// -----------------------
-// Filtrage & sélection
-// -----------------------
 function filteredProducts({ query = "", intent = {}, sort = "auto" }) {
   const tokens = normalize(query)
     .split(/\s+/)
     .filter(Boolean);
 
-  const list = produits.filter((product) => {
+  const list = produits.filter(product => {
     if (!matchTokens(product, tokens)) return false;
-
     if (intent.budget) {
       if (intent.budget === "small" && product.prix > 25) return false;
-      if (intent.budget === "medium" && (product.prix < 25 || product.prix > 75))
-        return false;
-      if (intent.budget === "large" && (product.prix < 75 || product.prix > 200))
-        return false;
+      if (intent.budget === "medium" && (product.prix < 25 || product.prix > 75)) return false;
+      if (intent.budget === "large" && (product.prix < 75 || product.prix > 200)) return false;
       if (intent.budget === "wow" && product.prix < 200) return false;
     }
-
     if (intent.occasion) {
       const occ = normalize(product.occasion || product.categorie);
       if (occ !== normalize(intent.occasion)) return false;
     }
-
-    if (intent.theme && normalize(product.theme) !== normalize(intent.theme))
-      return false;
-
+    if (intent.theme && normalize(product.theme) !== normalize(intent.theme)) return false;
     return true;
   });
 
-  const scored = list.map((p) => ({ ...p, _score: scoreProduct(p, tokens) }));
+  const scored = list.map(p => ({ ...p, _score: scoreProduct(p, tokens) }));
 
   if (sort === "prix-asc") return scored.sort((a, b) => a.prix - b.prix);
   if (sort === "prix-desc") return scored.sort((a, b) => b.prix - a.prix);
@@ -540,9 +406,6 @@ function pickRecommended(query = "", intent = {}) {
   return list[0] || produits[0];
 }
 
-// -----------------------
-// UI Cards
-// -----------------------
 function createCard(product) {
   const article = document.createElement("article");
   article.className = "card";
@@ -551,7 +414,6 @@ function createCard(product) {
   const img = document.createElement("img");
   img.src = product.image;
   img.alt = product.nom;
-  img.loading = "lazy";
 
   const content = document.createElement("div");
   content.className = "card-content";
@@ -570,7 +432,7 @@ function createCard(product) {
 
   const tags = document.createElement("div");
   tags.className = "tags";
-  (product.motscles || []).slice(0, 3).forEach((tag) => {
+  (product.motscles || []).slice(0, 3).forEach(tag => {
     const span = document.createElement("span");
     span.className = "tag";
     span.textContent = tag;
@@ -597,7 +459,7 @@ function createCard(product) {
   const fav = document.createElement("button");
   fav.className = "fav";
   fav.type = "button";
-  fav.textContent = "♡"; // ✅ corrigé
+  fav.textContent = "â™¡";
   if (favoris.has(product.id)) fav.classList.add("active");
   fav.addEventListener("click", () => toggleFavorite(product.id));
 
@@ -608,14 +470,10 @@ function createCard(product) {
   return article;
 }
 
-// -----------------------
-// Renders
-// -----------------------
 function renderHome() {
   const best = pickRecommended();
   const name = document.getElementById("bestName");
   if (!name) return;
-
   const desc = document.getElementById("bestDesc");
   const price = document.getElementById("bestPrice");
   const note = document.getElementById("bestNote");
@@ -630,24 +488,49 @@ function renderHome() {
   img.src = best.image;
   img.alt = best.nom;
   cta.href = best.lien_affilie;
-
   fav.dataset.id = best.id;
   fav.classList.toggle("active", favoris.has(best.id));
-  fav.textContent = "♡";
   fav.onclick = () => toggleFavorite(best.id);
 
+  // Quick picks (top 3 recommandations)
   const quickList = document.getElementById("quickList");
   if (quickList) {
     quickList.innerHTML = "";
     const picks = filteredProducts({ query: "", intent: {}, sort: "auto" }).slice(0, 3);
-    picks.forEach((p) => quickList.appendChild(createCard(p)));
+    picks.forEach(p => quickList.appendChild(createCard(p)));
   }
+}
+
+function renderExplore() {
+  const searchInput = document.getElementById("exploreSearch");
+  const sortSelect = document.getElementById("triSelect");
+  const query = searchInput ? searchInput.value : "";
+  const sort = sortSelect ? sortSelect.value : "auto";
+  const intent = currentIntent;
+
+  const recommended = pickRecommended(query, intent);
+  fillRecommended(recommended);
+
+  const resultsContainer = document.getElementById("resultsList");
+  if (!resultsContainer) return;
+  resultsContainer.innerHTML = "";
+
+  const list = filteredProducts({ query, intent, sort }).filter(p => p.id !== recommended.id);
+  if (!list.length) {
+    const empty = document.createElement("p");
+    empty.textContent = "Nous n'avons pas encore ce produit.";
+    empty.className = "muted";
+    resultsContainer.appendChild(empty);
+  } else {
+    list.forEach(product => resultsContainer.appendChild(createCard(product)));
+  }
+
+  renderFavoritesSection();
 }
 
 function fillRecommended(product) {
   const name = document.getElementById("recName");
   if (!name) return;
-
   const desc = document.getElementById("recDesc");
   const price = document.getElementById("recPrice");
   const note = document.getElementById("recNote");
@@ -662,61 +545,28 @@ function fillRecommended(product) {
   img.src = product.image;
   img.alt = product.nom;
   cta.href = product.lien_affilie;
-
   fav.dataset.id = product.id;
   fav.classList.toggle("active", favoris.has(product.id));
-  fav.textContent = "♡";
   fav.onclick = () => toggleFavorite(product.id);
 }
 
-function renderExplore() {
-  const searchInput = document.getElementById("exploreSearch");
-  const sortSelect = document.getElementById("triSelect");
-
-  const query = searchInput ? searchInput.value : "";
-  const sort = sortSelect ? sortSelect.value : "auto";
-  const intent = currentIntent;
-
-  const recommended = pickRecommended(query, intent);
-  fillRecommended(recommended);
-
-  const resultsContainer = document.getElementById("resultsList");
-  if (!resultsContainer) return;
-  resultsContainer.innerHTML = "";
-
-  const list = filteredProducts({ query, intent, sort }).filter((p) => p.id !== recommended.id);
-
-  if (!list.length) {
-    const empty = document.createElement("p");
-    empty.textContent = "Nous n'avons pas encore ce produit.";
-    empty.className = "muted";
-    resultsContainer.appendChild(empty);
-  } else {
-    list.forEach((product) => resultsContainer.appendChild(createCard(product)));
-  }
-
-  renderFavoritesSection();
-}
-
-// -----------------------
-// Favoris sync
-// -----------------------
 function toggleFavorite(id) {
-  if (favoris.has(id)) favoris.delete(id);
-  else favoris.add(id);
-
+  if (favoris.has(id)) {
+    favoris.delete(id);
+  } else {
+    favoris.add(id);
+  }
   saveFavorites(favoris);
   syncFavoriteStates();
 }
 
 function syncFavoriteStates() {
-  document.querySelectorAll(".fav").forEach((btn) => {
+  document.querySelectorAll(".fav").forEach(btn => {
     const card = btn.closest("[data-id]");
     const productId = card?.getAttribute("data-id") || btn.dataset.id;
     if (!productId) return;
     btn.classList.toggle("active", favoris.has(productId));
   });
-
   renderFavoritesSection();
   renderHome();
 }
@@ -727,7 +577,7 @@ function renderFavoritesSection() {
   if (!container) return;
 
   container.innerHTML = "";
-  const favProducts = produits.filter((p) => favoris.has(p.id));
+  const favProducts = produits.filter(p => favoris.has(p.id));
   if (counter) counter.textContent = favProducts.length.toString();
 
   if (!favProducts.length) {
@@ -738,14 +588,11 @@ function renderFavoritesSection() {
     return;
   }
 
-  favProducts.forEach((product) => container.appendChild(createCard(product)));
+  favProducts.forEach(product => container.appendChild(createCard(product)));
 }
 
-// -----------------------
-// Intent / navigation
-// -----------------------
 function handlePills() {
-  document.querySelectorAll(".pill, .price-card").forEach((btn) => {
+  document.querySelectorAll(".pill, .price-card").forEach(btn => {
     btn.addEventListener("click", () => {
       const value = btn.getAttribute("data-intent");
       if (!value) return;
@@ -772,17 +619,15 @@ function applyIntent(value) {
 function redirectToExplore(intent) {
   const url = new URL("explore.html", window.location.href);
   Object.entries(intent).forEach(([key, val]) => url.searchParams.set(key, val));
-
   const searchInput = document.getElementById("homeSearch");
   if (searchInput && searchInput.value) url.searchParams.set("q", searchInput.value);
-
   window.location.href = url.toString();
 }
 
 function setupHome() {
   const form = document.getElementById("homeSearchForm");
   if (form) {
-    form.addEventListener("submit", (e) => {
+    form.addEventListener("submit", e => {
       e.preventDefault();
       redirectToExplore(currentIntent);
     });
@@ -792,7 +637,6 @@ function setupHome() {
 function setupExplore() {
   const params = new URLSearchParams(window.location.search);
   const searchInput = document.getElementById("exploreSearch");
-
   if (searchInput && params.get("q")) searchInput.value = params.get("q");
   if (params.get("budget")) currentIntent.budget = params.get("budget");
   if (params.get("occasion")) currentIntent.occasion = params.get("occasion");
@@ -800,7 +644,7 @@ function setupExplore() {
 
   const form = document.getElementById("exploreSearchForm");
   if (form) {
-    form.addEventListener("submit", (e) => {
+    form.addEventListener("submit", e => {
       e.preventDefault();
       renderExplore();
     });
@@ -812,14 +656,7 @@ function setupExplore() {
   renderExplore();
 }
 
-// -----------------------
-// Boot
-// -----------------------
 document.addEventListener("DOMContentLoaded", () => {
-  initTheme();
-  setupThemeToggle();
-  setupThemeSwipe();
-
   handlePills();
 
   if (document.body.classList.contains("page-home")) {
