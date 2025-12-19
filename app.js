@@ -1,4 +1,4 @@
- // Base produits (peut Ãªtre Ã©tendue Ã  ~40+ par catÃ©gorie)
+﻿// Base produits (peut Ãªtre Ã©tendue Ã  ~40+ par catÃ©gorie)
 const produits = [
   {
     id: "sony-wh1000xm5",
@@ -8,7 +8,7 @@ const produits = [
     occasion: "Anniversaire",
     motscles: ["casque", "sans fil", "musique", "voyage"],
     prix: 349,
-    image: "https://images.unsplash.com/photo-1618365908648-e71bd5716cba?auto=format&fit=crop&w=800&q=80",
+    image: "https://m.media-amazon.com/images/I/61wVfgyu8qL._AC_SL1500_.jpg",
     lien_affilie: "https://www.amazon.fr/s?k=sony+wh1000xm5&tag=cadova-21",
     note: 4.7,
     avis: 12543,
@@ -162,13 +162,13 @@ const produits = [
   },
   {
     id: "jeu-codenames",
-    nom: "Jeu de société Codenames",
+    nom: "Jeu de sociÃ©tÃ© Codenames",
     description: "Parties rapides 4+, simple Ã  expliquer, rejouable.",
     categorie: "Famille",
     occasion: "Famille",
     motscles: ["jeu", "famille", "amis"],
     prix: 19,
-    image: "https://m.media-amazon.com/images/I/71-7-5UMReL._AC_SX679_.jpg",
+    image: "https://images.unsplash.com/photo-1504274066651-8d31a536b11a?auto=format&fit=crop&w=800&q=80",
     lien_affilie: "https://www.amazon.fr/s?k=jeu+codenames&tag=cadova-21",
     note: 4.8,
     avis: 29000,
