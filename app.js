@@ -35,7 +35,7 @@ const produits = [
   {
     id: "kindle-paperwhite",
     nom: "Kindle Paperwhite 16 Go",
-    description: "Liseuse Ã©tanche longue autonomie, cadeau sÃ»r pour lecteurs.",
+    description: "Liseuse étanche longue autonomie, cadeau parfait pour lecteurs.",
     categorie: "Culture",
     occasion: "Noel",
     motscles: ["lecture", "voyage", "livres"],
@@ -459,7 +459,7 @@ function createCard(product) {
   const fav = document.createElement("button");
   fav.className = "fav";
   fav.type = "button";
-  fav.textContent = "â™¡";
+  fav.textContent = "♥";
   if (favoris.has(product.id)) fav.classList.add("active");
   fav.addEventListener("click", () => toggleFavorite(product.id));
 
