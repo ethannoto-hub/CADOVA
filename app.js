@@ -40,7 +40,7 @@ const produits = [
     occasion: "Noel",
     motscles: ["lecture", "voyage", "livres"],
     prix: 169,
-    image: "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=800&q=80",
+    image: "https://m.media-amazon.com/images/I/618KCWbDUWL._AC_SL1000_.jpg",
     lien_affilie: "https://www.amazon.fr/s?k=kindle+paperwhite+16+go&tag=cadova-21",
     note: 4.8,
     avis: 50510,
@@ -131,7 +131,7 @@ const produits = [
   {
     id: "switch-oled",
     nom: "Nintendo Switch OLED",
-    description: "Console hybride famille/solo, valeur sÃ»re gaming.",
+    description: "Console hybride famille/solo, cathegorie gaming.",
     categorie: "Gaming",
     occasion: "Noel",
     motscles: ["console", "gaming", "famille"],
