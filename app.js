@@ -88,7 +88,7 @@ const produits = [
     occasion: "Fete des meres",
     motscles: ["lego", "fleurs", "deco"],
     prix: 49,
-    image: "https://images.unsplash.com/photo-1523419400524-2230bcb391a2?auto=format&fit=crop&w=800&q=80",
+    image: "https://m.media-amazon.com/images/I/81qgZ86REmL._AC_SY300_SX300_QL70_ML2_.jpg",
     lien_affilie: "https://www.amazon.fr/s?k=lego+bouquet+fleurs&tag=cadova-21",
     note: 4.9,
     avis: 35600,
@@ -307,6 +307,55 @@ const produits = [
 ];
 
 const STORAGE_KEY = "cadova_favoris_v1";
+
+// Theme toggle (mode clair/sombre)
+const THEME_KEY = "cadova_theme";
+const THEME_DARK = "dark";
+const THEME_LIGHT = "light";
+
+function loadTheme() {
+  try {
+    const stored = localStorage.getItem(THEME_KEY);
+    return stored === THEME_LIGHT || stored === THEME_DARK ? stored : null;
+  } catch {
+    return null;
+  }
+}
+
+function saveTheme(theme) {
+  try {
+    localStorage.setItem(THEME_KEY, theme);
+  } catch {
+    // No-op: localStorage might be blocked.
+  }
+}
+
+function updateThemeToggle(theme) {
+  const btn = document.getElementById("themeToggle");
+  if (!btn) return;
+  const isLight = theme === THEME_LIGHT;
+  btn.textContent = isLight ? "☀️" : "🌙";
+  btn.setAttribute("aria-label", isLight ? "Activer le mode sombre" : "Activer le mode clair");
+}
+
+function setTheme(theme) {
+  document.documentElement.setAttribute("data-theme", theme);
+  updateThemeToggle(theme);
+}
+
+function setupThemeToggle() {
+  const initialTheme = loadTheme() || THEME_DARK;
+  setTheme(initialTheme);
+
+  const btn = document.getElementById("themeToggle");
+  if (!btn) return;
+  btn.addEventListener("click", () => {
+    const current = document.documentElement.getAttribute("data-theme");
+    const next = current === THEME_DARK ? THEME_LIGHT : THEME_DARK;
+    setTheme(next);
+    saveTheme(next);
+  });
+}
 
 function loadFavorites() {
   try {
@@ -657,6 +706,8 @@ function setupExplore() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  // Init theme toggle (mode clair/sombre)
+  setupThemeToggle();
   handlePills();
 
   if (document.body.classList.contains("page-home")) {
