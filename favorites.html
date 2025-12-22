@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadova - Favoris</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page-favorites">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Cadova">
+        <img class="brand-logo" src="logo-cadova.png" alt="" />
+        <span class="sr-only">Cadova</span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html">Accueil</a>
+        <a href="explore.html">Tous les cadeaux</a>
+        <a class="active" href="favorites.html">Favoris</a>
+        <a href="login.html">Se connecter</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container favorites-section">
+      <div class="section-head">
+        <div>
+          <h1>Favoris</h1>
+          <p class="muted">Vos cadeaux gardes pour plus tard.</p>
+        </div>
+        <span class="count" id="favoritesCount">0</span>
+      </div>
+      <div class="cards-grid" id="favoritesList"></div>
+      <p class="muted empty-state" id="favoritesEmpty" hidden>Aucun favori pour le moment.</p>
+      <button class="btn btn-secondary" id="favoritesMore" type="button">Voir plus</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Cadova vous aide a choisir vite, sans surcharge.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

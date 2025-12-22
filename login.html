@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadova - Se connecter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page-login">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Cadova">
+        <img class="brand-logo" src="logo-cadova.png" alt="" />
+        <span class="sr-only">Cadova</span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html">Accueil</a>
+        <a href="explore.html">Tous les cadeaux</a>
+        <a href="favorites.html">Favoris</a>
+        <a class="active" href="login.html">Se connecter</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container auth-section">
+      <div class="section-head">
+        <h1>Se connecter</h1>
+        <p class="muted">Acces rapide, sans perte de temps.</p>
+      </div>
+      <form class="auth-form">
+        <label class="filter-label" for="loginEmail">
+          Email
+          <input id="loginEmail" type="email" placeholder="email@exemple.com" />
+        </label>
+        <label class="filter-label" for="loginPassword">
+          Mot de passe
+          <input id="loginPassword" type="password" placeholder="********" />
+        </label>
+        <button class="btn btn-primary" type="submit">Se connecter</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Cadova vous aide a choisir vite, sans surcharge.</p>
+    </div>
+  </footer>
+</body>
+</html>
