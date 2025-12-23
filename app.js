@@ -10,43 +10,49 @@
   },
   {
     id: "keychain-metal",
-    name: "Porte-cles metal",
-    description: "Petit cadeau utile au quotidien.",
+    name: "Porte-cles en acier inoxydable grave sur mesure",
+    description: "Un porte-cles personnalise qui garde vos plus beaux souvenirs toujours avec vous. Ajoutez une photo qui compte vraiment et un texte au dos pour le rendre unique. Un cadeau discret, elegant et charge d'emotion, parfait pour faire plaisir sans se tromper.",
     category: "mode",
     price: 5,
-    link: "#"
+    link: "https://www.amazon.fr/Porte-cl%C3%A9s-calendrier-personnalis%C3%A9-sp%C3%A9ciale-disponibles/dp/B0B1TFB17K/ref=sr_1_32_sspa?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3DW5VNP7XUETB&dib=eyJ2IjoiMSJ9.E_Nt42LIFj-nikhDBTq382a-WspW5nKTsLK_G1SdzRuETTodgq6-hPziu6Q5UxLGf_I8jwPHSDr_sq8CaRn8BbwGVpu-VSzb6Xo97rJVYee1TfWpptJKK9RMMPBUko-R4rH-zdJWyA8qP16GQVnE_wpwAE1RbdyGEyFDy-HSYSC1W5-XihQhF6bLq1bFe-2-WfzGqrhFsEOQLfj-WS9ia9E5ILMz09qxjns3KVSD8CncIWpMpT_5iaP8PijFreeIstTtfHDzNDcjn8LvhQT1Neu5hnR8pT5vcZoUwXvhrx8.DZcDUEx1MiJuj9SH54BWMCW0UdsTzp-H25PXKkVSwhk&dib_tag=se&keywords=Porte-cles+metal&qid=1766449134&sprefix=porte-cles+metal%2Caps%2C922&sr=8-32-spons&aref=BNlgFX4P1x&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&psc=1",
+    image: "porte%20clee.jpg"
   },
   {
     id: "mini-candle",
-    name: "Bougie mini",
-    description: "Ambiance douce en un instant.",
+    name: "Bougie Parfumee Pivoine et Poire Anjou",
+    description: "Une bougie parfumee elegante qui cree instantanement une ambiance douce et chaleureuse. L'association de la pivoine florale et de la poire d'Anjou apporte une senteur fraiche, delicate et apaisante. Un cadeau simple et raffine, parfait pour se detendre ou faire plaisir sans se tromper.",
     category: "bien-etre",
     price: 5,
-    link: "#"
+    link: "https://www.amazon.fr/Bougie-d%C3%A9sodorisant-grenade-bergamote-combustion/dp/B08DJ6WJTQ/ref=pd_bxgy_thbs_d_sccl_2/525-1462363-5219435?pd_rd_w=R3AFN&content-id=amzn1.sym.3241dc27-b429-4dd8-b1d4-32e571df604c&pf_rd_p=3241dc27-b429-4dd8-b1d4-32e571df604c&pf_rd_r=HAMWS6H4ZKBK4R65AAG0&pd_rd_wg=amL0D&pd_rd_r=4f275423-6779-42a8-9e45-dce959c0528f&pd_rd_i=B08DJ6WJTQ&th=1",
+    image: "bougie.jpg"
   },
   {
     id: "mini-notebook",
-    name: "Mini carnet",
-    description: "Note rapide, idee claire.",
+    name: "Lot de 3 Carnets Hokusai - Carnet de Notes A6",
+    description: "Un lot de carnets elegants inspires des oeuvres emblematiques de Hokusai. Leur format A6 est parfait pour noter des idees, dessiner ou ecrire au quotidien. Un cadeau artistique et pratique, ideal pour les amateurs d'art et de papeterie raffinee.",
     category: "loisirs",
     price: 5,
-    link: "#"
+    link: "https://www.amazon.fr/Kokonote-Carnets-Hokusai-Notebook-Recettes/dp/B0BVGBZP7Z/ref=sr_1_13?dib=eyJ2IjoiMSJ9.yFGYQmgguZU3FUjzNOOCFOOf_2e99BpjChXmsCnZoWchAWCeJrKIzXsn50gZkkTlQnmUwopWhFtibO0pVuvm_uaQf5JJPeUOtqZBldnwqWQFO_waOWFwOY9NKiNGDUxmUMeX5JhrsnPdrFUeRUmkl8SRuALxPCTr9HeoXnkn0Oh5KzXBldVvRodSemSvAk2gq9l2-O_flKpYP5PQv900SKtpqn-KoytJ7S9aYRaqzVrNQd5KvF0k3hn60Yf9uK00GOufxBYGs9ZvMOqnwnVppf1hKpyyNPeLY75enWeFu1M.zXYFAqtxGQdCrCHPLKAzvA6yQs6BahMAFKTCaYXT1kM&dib_tag=se&keywords=Mini+carnet&qid=1766452100&sr=8-13",
+    image: "carnet.jpg"
   },
   {
     id: "travel-mug",
-    name: "Mug isotherme",
-    description: "Pratique pour tous les jours.",
+    name: "UZSPACE Mug Isotherme",
+    description: "Un mug isotherme elegant qui garde vos boissons chaudes ou froides pendant des heures. Sa poignee confortable, sa paille integree et son design artistique en font un compagnon parfait au quotidien. Un cadeau pratique et style, ideal pour le cafe, le the ou les boissons fraiches, a la maison comme en deplacement.",
     category: "maison",
     price: 22,
-    link: "#"
+    link: "https://www.amazon.fr/UZSPACE-Mug-Isotherme-avec-Poign%C3%A9e/dp/B0FY2LKQS2/ref=sxin_24_sbv_search_btf?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&content-id=amzn1.sym.e465c033-1722-4c7f-83fa-b78395dac004%3Aamzn1.sym.e465c033-1722-4c7f-83fa-b78395dac004&crid=5GRA54DWKD8R&cv_ct_cx=Mug%2Bisotherme&keywords=Mug%2Bisotherme&pd_rd_i=B0FY2KYH8C&pd_rd_r=503665b2-a363-4326-bc17-c38455f5453b&pd_rd_w=zP7m0&pd_rd_wg=mR43P&pf_rd_p=e465c033-1722-4c7f-83fa-b78395dac004&pf_rd_r=7RRBYC8QFRPQG4Q9BE71&qid=1766452570&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=mug%2Bisotherme%2Caps%2C470&sr=1-1-07652b71-81e3-41f8-9097-e46726928fb7&th=1",
+    image: "mug%20isotherme.jpg"
   },
   {
     id: "tea-kit",
-    name: "Coffret the",
-    description: "Detente immediate.",
+    name: "Les 2 Marmottes - Grand Coffret",
+    description: "Un grand coffret d'infusions et de thes pour savourer des moments de calme et de bien-etre. Une selection variee de recettes naturelles, sans aromes ajoutes, fabriquees en France avec soin. Un cadeau chaleureux et raffine, parfait pour se detendre et faire plaisir a coup sur.",
     category: "bien-etre",
     price: 18,
-    link: "#"
+    link: "https://www.amazon.fr/Marmottes-R%C3%A9coltes-Infusions-Bien-%C3%8Atre-Relaxation/dp/B0CTCZ9ZLC/ref=sxin_15_pa_sp_search_thematic_sspa?content-id=amzn1.sym.a75e204b-30fd-45f8-a56f-102ffd5951f5%3Aamzn1.sym.a75e204b-30fd-45f8-a56f-102ffd5951f5&cv_ct_cx=Coffret%2Bthe&keywords=Coffret%2Bthe&pd_rd_i=B0CTCZ9ZLC&pd_rd_r=e5926224-4b26-4f77-ae49-18142a08a465&pd_rd_w=ceJmQ&pd_rd_wg=2vvsn&pf_rd_p=a75e204b-30fd-45f8-a56f-102ffd5951f5&pf_rd_r=RPP51CMQP0XRAKYDWX49&qid=1766452879&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-3-1c0bc4f8-9a4b-47e4-b117-3d30b74c13f1-spons&aref=7FnANHgXAh&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1",
+    image: "boite%20de%20the.jpg",
+    imageFit: "cover"
   },
   {
     id: "philips-tah3209bk",
@@ -59,11 +65,13 @@
   },
   {
     id: "easy-plant",
-    name: "Plante facile",
-    description: "Verte et simple a garder.",
+    name: "Plante d'interieur - Yucca elephantipes",
+    description: "Une plante d'interieur elegante et facile a vivre qui apporte instantanement une touche de verdure a votre interieur. Le yucca elephantipes est apprecie pour son allure moderne et sa grande resistance. Un cadeau naturel et decoratif, parfait pour illuminer un espace sans contrainte d'entretien.",
     category: "maison",
     price: 24,
-    link: "#"
+    link: "https://www.amazon.fr/dp/B0G2CSMWTL/ref=sspa_dk_detail_3?pf_rd_p=48016705-69f5-4af0-98de-e97187b24a0b&pf_rd_r=NBM4R288G9GB6JYYK0TQ&pd_rd_wg=t2c9F&pd_rd_w=6V47p&content-id=amzn1.sym.48016705-69f5-4af0-98de-e97187b24a0b&pd_rd_r=39eee778-0bed-4377-821a-bf0b1e989b39&aref=l3Hv2V11Yu&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWwy&th=1",
+    image: "plante.jpg",
+    imageFit: "cover"
   },
   {
     id: "desk-lamp",
@@ -199,6 +207,9 @@ function createCard(product, options = {}) {
 
   const media = document.createElement("div");
   media.className = "card-media";
+  if (product.imageFit === "cover") {
+    media.classList.add("card-media-cover");
+  }
   if (product.image) {
     const img = document.createElement("img");
     img.src = product.image;
@@ -337,19 +348,22 @@ function setupHome() {
   });
 
   if (allList && allSection && allMore) {
-    let pageIndex = 0;
     let currentQuery = "";
+    let showAll = false;
 
     function getSorted() {
       return PRODUCTS.filter(item => matchesQuery(item, currentQuery)).sort((a, b) => b.price - a.price);
     }
 
-    function renderPage(index) {
-      const filtered = getSorted();
-      const start = index * 4;
-      const slice = filtered.slice(start, start + 4);
+    function setToggleLabel() {
+      allMore.textContent = showAll ? "Voir moins" : "Voir plus";
+      allMore.setAttribute("aria-expanded", showAll ? "true" : "false");
+    }
 
-      if (!slice.length) {
+    function renderAll() {
+      const filtered = getSorted();
+
+      if (!filtered.length) {
         allList.innerHTML = "";
         const msg = document.createElement("p");
         msg.className = "muted empty-state";
@@ -357,34 +371,41 @@ function setupHome() {
         allList.appendChild(msg);
         allMore.hidden = true;
         allSection.classList.add("is-visible");
-        allMore.setAttribute("aria-expanded", "true");
-        allMore.textContent = "Voir plus";
+        showAll = true;
+        setToggleLabel();
         return;
       }
 
       allList.innerHTML = "";
-      slice.forEach(item => allList.appendChild(createCard(item)));
+      filtered.forEach(item => allList.appendChild(createCard(item)));
       updateFavoriteButtons();
       allSection.classList.add("is-visible");
-      pageIndex = index;
-      allMore.hidden = start + 4 >= filtered.length;
-      allMore.setAttribute("aria-expanded", "true");
-      allMore.textContent = allMore.hidden ? "Voir plus" : "Voir encore";
+      allMore.hidden = false;
+      showAll = true;
+      setToggleLabel();
+    }
+
+    function collapseAll() {
+      showAll = false;
+      allSection.classList.remove("is-visible");
+      allList.innerHTML = "";
+      allMore.hidden = false;
+      setToggleLabel();
     }
 
     allMore.addEventListener("click", () => {
-      if (!allSection.classList.contains("is-visible")) {
-        renderPage(0);
+      if (showAll) {
+        collapseAll();
         return;
       }
-      renderPage(pageIndex + 1);
+      renderAll();
     });
 
     if (searchForm && searchInput) {
       searchForm.addEventListener("submit", event => {
         event.preventDefault();
         currentQuery = searchInput.value.trim();
-        renderPage(0);
+        renderAll();
       });
 
       searchInput.addEventListener("input", () => {
@@ -392,9 +413,11 @@ function setupHome() {
         if (!currentQuery && !allSection.classList.contains("is-visible")) {
           return;
         }
-        renderPage(0);
+        renderAll();
       });
     }
+
+    setToggleLabel();
   }
 }
 
@@ -407,8 +430,8 @@ function setupExplore() {
 
   if (!list || !budgetSelect || !typeSelect || !more) return;
 
-  let pageIndex = 0;
   const pageSize = 4;
+  let showAll = false;
 
   function getFiltered() {
     return PRODUCTS.filter(product =>
@@ -416,25 +439,25 @@ function setupExplore() {
     );
   }
 
-  function renderPage(reset) {
-    if (reset) pageIndex = 0;
+  function renderList(reset) {
+    if (reset) showAll = false;
     const filtered = getFiltered();
-    const start = pageIndex * pageSize;
-    const slice = filtered.slice(start, start + pageSize);
+    const slice = showAll ? filtered : filtered.slice(0, pageSize);
 
     renderCards(list, slice, "");
     if (empty) empty.hidden = filtered.length > 0;
-    more.hidden = start + pageSize >= filtered.length;
+    more.hidden = filtered.length <= pageSize;
+    more.textContent = showAll ? "Voir moins" : "Voir plus";
   }
 
-  budgetSelect.addEventListener("change", () => renderPage(true));
-  typeSelect.addEventListener("change", () => renderPage(true));
+  budgetSelect.addEventListener("change", () => renderList(true));
+  typeSelect.addEventListener("change", () => renderList(true));
   more.addEventListener("click", () => {
-    pageIndex += 1;
-    renderPage(false);
+    showAll = !showAll;
+    renderList(false);
   });
 
-  renderPage(true);
+  renderList(true);
 }
 
 function setupFavorites() {
@@ -445,28 +468,28 @@ function setupFavorites() {
 
   if (!list || !empty || !more || !count) return;
 
-  let pageIndex = 0;
   const pageSize = 4;
+  let showAll = false;
 
-  function renderPage(reset) {
-    if (reset) pageIndex = 0;
+  function renderList(reset) {
+    if (reset) showAll = false;
     const favItems = PRODUCTS.filter(item => favorites.has(item.id));
-    const start = pageIndex * pageSize;
-    const slice = favItems.slice(start, start + pageSize);
+    const slice = showAll ? favItems : favItems.slice(0, pageSize);
 
     renderCards(list, slice, "");
     empty.hidden = favItems.length > 0;
-    more.hidden = start + pageSize >= favItems.length;
+    more.hidden = favItems.length <= pageSize;
+    more.textContent = showAll ? "Voir moins" : "Voir plus";
     count.textContent = favItems.length.toString();
   }
 
   more.addEventListener("click", () => {
-    pageIndex += 1;
-    renderPage(false);
+    showAll = !showAll;
+    renderList(false);
   });
 
-  renderFavoritesPage = renderPage;
-  renderPage(true);
+  renderFavoritesPage = renderList;
+  renderList(true);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
