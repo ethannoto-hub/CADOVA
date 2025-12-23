@@ -292,6 +292,10 @@ function toggleFavorite(id, button) {
     button.classList.add("pop");
   }
 
+  if (navigator.vibrate) {
+    navigator.vibrate(20);
+  }
+
   if (renderFavoritesPage) {
     renderFavoritesPage(true);
   }
