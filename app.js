@@ -1,19 +1,19 @@
 ﻿const PRODUCTS = [
   {
     id: "card-minimal",
-    name: "Coffret de chocolats celebrations 186g",
+    name: "CELEBRATIONS - Boite Cadeau en Metal",
     description: "Parce que Celebrations, c'est du plaisir instantane : des chocolats que tout le monde connait, chacun trouve son prefere, zero risque, sourire garanti des l'ouverture.",
     category: "maison",
-    price: 5,
-    link: "https://www.amazon.fr/dp/B07377Z4Q7?tag=zzounko-21&linkCode=osi&th=1",
-    image: "coffret%20choco%20186g.jpg"
+    price: 10,
+    link: "https://www.amazon.fr/CELEBRATIONS-assortiment-chocolats-SNICKERS-MALTESERS/dp/B074BV39ZG/ref=sr_1_1_sspa?crid=KCN98DUA2WKW&dib=eyJ2IjoiMSJ9.s4wnxP3kN7IOLw7euLqV73u-q_xHnf7EdQrQESJ8rAvErCGG-kelG6XlI46BMy03aU8t9el5WdOsI1T-M3MzgR-veOUWB8isUqOlZjNJ_X3sY46iB3zSiyMq9YQpE0r9lCzOlYrcwgiN1rFDnl_bzBWFe8rqMINnik59ssW8fmUXzzsMRqtf6FLP6mlnneC-54v7Ujz40GVs6TO_IJVrrQixXX1Ezq4B1z2FAwX8xe8B9vkrU4nkdLfzw11kZY4sOLqwFyVtjiogd4_CXgm3MRq4kfB_hDqjKDeGtchk-gI.m8Vib0u_qlCllMReFpHiLOH666OF6B0peEss-YTl3es&dib_tag=se&keywords=celebration%2Bchocolat&qid=1766572469&s=grocery&sprefix=celebra%2Cgrocery%2C620&sr=1-1-spons&aref=bB4e0nXzEA&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1",
+    image: "boite%20celebration%20435g.jpg"
   },
   {
     id: "keychain-metal",
     name: "Porte-cles en acier inoxydable grave sur mesure",
     description: "Un porte-cles personnalise qui garde vos plus beaux souvenirs toujours avec vous. Ajoutez une photo qui compte vraiment et un texte au dos pour le rendre unique. Un cadeau discret, elegant et charge d'emotion, parfait pour faire plaisir sans se tromper.",
     category: "mode",
-    price: 5,
+    price: 10,
     link: "https://www.amazon.fr/Porte-cl%C3%A9s-calendrier-personnalis%C3%A9-sp%C3%A9ciale-disponibles/dp/B0B1TFB17K/ref=sr_1_32_sspa?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3DW5VNP7XUETB&dib=eyJ2IjoiMSJ9.E_Nt42LIFj-nikhDBTq382a-WspW5nKTsLK_G1SdzRuETTodgq6-hPziu6Q5UxLGf_I8jwPHSDr_sq8CaRn8BbwGVpu-VSzb6Xo97rJVYee1TfWpptJKK9RMMPBUko-R4rH-zdJWyA8qP16GQVnE_wpwAE1RbdyGEyFDy-HSYSC1W5-XihQhF6bLq1bFe-2-WfzGqrhFsEOQLfj-WS9ia9E5ILMz09qxjns3KVSD8CncIWpMpT_5iaP8PijFreeIstTtfHDzNDcjn8LvhQT1Neu5hnR8pT5vcZoUwXvhrx8.DZcDUEx1MiJuj9SH54BWMCW0UdsTzp-H25PXKkVSwhk&dib_tag=se&keywords=Porte-cles+metal&qid=1766449134&sprefix=porte-cles+metal%2Caps%2C922&sr=8-32-spons&aref=BNlgFX4P1x&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&psc=1",
     image: "porte%20clee.jpg"
   },
@@ -22,7 +22,7 @@
     name: "Bougie Parfumee Pivoine et Poire Anjou",
     description: "Une bougie parfumee elegante qui cree instantanement une ambiance douce et chaleureuse. L'association de la pivoine florale et de la poire d'Anjou apporte une senteur fraiche, delicate et apaisante. Un cadeau simple et raffine, parfait pour se detendre ou faire plaisir sans se tromper.",
     category: "bien-etre",
-    price: 5,
+    price: 10,
     link: "https://www.amazon.fr/Bougie-d%C3%A9sodorisant-grenade-bergamote-combustion/dp/B08DJ6WJTQ/ref=pd_bxgy_thbs_d_sccl_2/525-1462363-5219435?pd_rd_w=R3AFN&content-id=amzn1.sym.3241dc27-b429-4dd8-b1d4-32e571df604c&pf_rd_p=3241dc27-b429-4dd8-b1d4-32e571df604c&pf_rd_r=HAMWS6H4ZKBK4R65AAG0&pd_rd_wg=amL0D&pd_rd_r=4f275423-6779-42a8-9e45-dce959c0528f&pd_rd_i=B08DJ6WJTQ&th=1",
     image: "bougie.jpg"
   },
@@ -34,6 +34,15 @@
     price: 5,
     link: "https://www.amazon.fr/Kokonote-Carnets-Hokusai-Notebook-Recettes/dp/B0BVGBZP7Z/ref=sr_1_13?dib=eyJ2IjoiMSJ9.yFGYQmgguZU3FUjzNOOCFOOf_2e99BpjChXmsCnZoWchAWCeJrKIzXsn50gZkkTlQnmUwopWhFtibO0pVuvm_uaQf5JJPeUOtqZBldnwqWQFO_waOWFwOY9NKiNGDUxmUMeX5JhrsnPdrFUeRUmkl8SRuALxPCTr9HeoXnkn0Oh5KzXBldVvRodSemSvAk2gq9l2-O_flKpYP5PQv900SKtpqn-KoytJ7S9aYRaqzVrNQd5KvF0k3hn60Yf9uK00GOufxBYGs9ZvMOqnwnVppf1hKpyyNPeLY75enWeFu1M.zXYFAqtxGQdCrCHPLKAzvA6yQs6BahMAFKTCaYXT1kM&dib_tag=se&keywords=Mini+carnet&qid=1766452100&sr=8-13",
     image: "carnet.jpg"
+  },
+  {
+    id: "cuban-chain",
+    name: "bracelet en argent sterling",
+    description: "Ajoute une touche de style a ton poignet sans te ruiner. Ce bracelet a maillons cubains donne un look moderne et affirme, parfait pour tous les jours ou pour completer une tenue casual. Leger, facile a porter et propose a seulement 2,20 EUR, c'est le petit accessoire qui a du style sans vider ton porte-monnaie.",
+    category: "mode",
+    price: 2.2,
+    link: "https://www.amazon.fr/dp/B0FKTB7GRQ?ie=UTF8&ref=cm_sw_r_cso_cp_apin_dp_hul_7DFP1XP31RYXYKNWPM2Z&ASIN=B0FKTB7GRQ&s=bazaar&social_share=cm_sw_r_cso_cp_apin_dp_hul_7DFP1XP31RYXYKNWPM2Z&ref_=cm_sw_r_cso_cp_apin_dp_hul_7DFP1XP31RYXYKNWPM2Z",
+    image: "Cha%C3%AEne%20%C3%A0%20maillons%20cubains.jpg"
   },
   {
     id: "travel-mug",
@@ -105,47 +114,14 @@
     price: 50,
     link: "https://www.amazon.fr/dp/B0C2RSJHS6?ref_=MARS_NAVSTRIPE_desktop_echo_echo_spot&th=1",
     image: "echo%20alexa.jpg"
-  },
-  {
-    id: "wireless-headset",
-    name: "Meta Quest 3S 128 Go",
-    description: "Le Meta Quest 3S, c'est le futur entre vos mains : aussi impressionnant pour jouer que puissant pour travailler, regarder des films ou creer un espace de travail virtuel autour de vous. Sans cable, sans PC, il transforme n'importe quelle piece en nouvel environnement immersif, ou le divertissement et la productivite ne font plus qu'un.",
-    category: "tech",
-    price: 199,
-    link: "https://www.amazon.fr/Meta-Quest-128-Reconditionn%C3%A9-Tout-en/dp/B09MP71S29/ref=sr_1_4?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=GIEQOUR1RSB4&dib=eyJ2IjoiMSJ9.jMNnmmuTx8zQKlhu5tY2bRHqE7cVy6qCUMfQMGYSBmzmg2lfCWwNBRg42S4t6cLms8-qbPdd1lq3z_eI8jy1eBBelt10Zr-BvnT-3u8wt8SR574hPRzyjhoaVpa0A37niDwpW4tz_bFFzzTni7UNLxc5CR5xV9agQwv96ngLvS_rwBmgolQ-jBbdONnB36FT_2ZnjJ3KSvpuCX892gOozCiQT-2CNeVaFObC2lNfQ5DeO4Vl5V-ovW2mcZZPVQITpsJskC--s9f7n5ZdNPA9MiC3VhHJ2gC7LxZYcFC7jac.Z9G5X6V54ApxUxCwdPDNQANZTnN5MDTgIo5tq8yhesY&dib_tag=se&keywords=metal+quest+2s&qid=1766443990&sprefix=metat+quest+2%2Caps%2C317&sr=8-4",
-    image: "meta%20quest.jpg"
-  },
-  {
-    id: "smartwatch",
-    name: "Montre connectee",
-    description: "Utile et elegante.",
-    category: "tech",
-    price: 149,
-    link: "#"
-  },
-  {
-    id: "retro-console",
-    name: "Console retro",
-    description: "Gaming rapide, zero prise de tete.",
-    category: "gaming",
-    price: 119,
-    link: "#"
-  },
-  {
-    id: "spa-box",
-    name: "Coffret spa premium",
-    description: "Moment de calme garanti.",
-    category: "bien-etre",
-    price: 120,
-    link: "#"
   }
 ];
 
 const BUDGETS = {
   "5": { label: "5 EUR", min: 0, max: 5 },
-  "25": { label: "25 EUR", min: 6, max: 25 },
-  "50": { label: "50 EUR", min: 26, max: 50 },
-  "100": { label: "+100 EUR", min: 100, max: Number.POSITIVE_INFINITY }
+  "10": { label: "10 EUR", min: 6, max: 10 },
+  "25": { label: "25 EUR", min: 11, max: 25 },
+  "50": { label: "50 EUR", min: 26, max: 50 }
 };
 
 const FAVORITES_KEY = "cadova_favorites_v2";
