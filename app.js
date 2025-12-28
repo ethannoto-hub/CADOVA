@@ -36,6 +36,24 @@
     image: "carnet.jpg"
   },
   {
+    id: "phone-tablet-stand",
+    name: "Support reglable smartphone et tablette",
+    description: "Support compact en metal, angle reglable, pads antiderapants et passage pour cable : parfait pour poser un telephone ou une petite tablette sans glisser, que ce soit pour une visio, une recette ou charger a cote du bureau.",
+    category: "tech",
+    price: 5,
+    link: "https://www.amazon.fr/t%C3%A9l%C3%A9phone-r%C3%A9glable-dappareil-%C3%A9lectronique-universel/dp/B0FJY36K2G/?_encoding=UTF8&s=bazaar&psc=1&pd_rd_w=9Ln9i&content-id=amzn1.sym.06d08abb-23db-4673-badf-10a16e3fbfef&pf_rd_p=06d08abb-23db-4673-badf-10a16e3fbfef&pf_rd_r=70WP9GM3XGDCK9Z02WKG&pd_rd_wg=YOiPH&pd_rd_r=bb72a887-10c4-44fa-85d5-8ec1d924cd20&pos=ib",
+    image: "support%20telephonique.jpg"
+  },
+  {
+    id: "finger-snap-box",
+    name: "Boite de claques doigts originale",
+    description: "Mini boite pleine de petits claques doigts : un gadget nostalgique pour animer une soiree ou glisser une surprise marrante sans se ruiner.",
+    category: "loisirs",
+    price: 5,
+    link: "https://www.amazon.fr/Maelsa%C2%AE-petits-Doigts-Claque-cat%C3%A9gorie/dp/B0C1P2D89P?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1ZN7PT8SVYGGE&dib=eyJ2IjoiMSJ9.6KJr-L2xyJQxTMov3oCjqYTuuub22q4LGga72NvxQH5V4ecTFx8iK9aTXzTgvike7yfFAvXnJ9sZDBgYiJhNJW1KWtTqZ6eLZThi0huzf28AoevS-75LwhClvecebL_6mgxMuN2CGkzcZKl4MyPpwFfEnaTIEfdq6ri-7opG7aqgEO9NE6T58Cb_faEyjqB7M8tXafTxO6brlM6cADTbxN89KipLmp2b_40EUNHZYhcYwV9ysH3C_qaimsF9_SEZ5gCSmQqQi8FTY7d6T-YLCLLP8IMlaMZv0JPUI0uFRm0.JDBj4_75PSJvGkLHFkfbuaU5VUELw56y0MSwewOuHvY&dib_tag=se&keywords=claque%2Bdoigt&qid=1766883064&sprefix=claque%2Bdoigt%2Caps%2C339&sr=8-10&th=1",
+    image: "claque%20doigt.jpg"
+  },
+  {
     id: "cuban-chain",
     name: "bracelet en argent sterling",
     description: "Ajoute une touche de style a ton poignet sans te ruiner. Ce bracelet a maillons cubains donne un look moderne et affirme, parfait pour tous les jours ou pour completer une tenue casual. Leger, facile a porter et propose a seulement 2,20 EUR, c'est le petit accessoire qui a du style sans vider ton porte-monnaie.",
@@ -83,28 +101,34 @@
     imageFit: "cover"
   },
   {
-    id: "desk-lamp",
-    name: "Lampe de bureau",
-    description: "Lumiere douce pour le soir.",
-    category: "maison",
-    price: 45,
-    link: "#"
+    id: "lego-paris",
+    name: "LEGO Architecture Paris",
+    description: "Set LEGO Architecture qui capture les icones de Paris (Tour Eiffel, Arc de Triomphe, Louvre, Grand Palais, Champs-Elysees). Un montage detaille pour deco moderne et escapade miniature dans la Ville Lumiere.",
+    category: "loisirs",
+    price: 50,
+    link: "https://www.amazon.fr/LEGO-Architecture-Paris-Ville-lAmour/dp/B0FPXJ7MGT?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2GTPL5HSP9WZ3&dib=eyJ2IjoiMSJ9.crEGi9FXf_nh1Slx-kdl5hJe02OQCvf2IrNc7Y12uTQPf6HUiBYKzWO7rWcbjwYs0wz9EnwJ3SHsCwB6ZksmO0M5-GYmmBOM-_EOzc48cRrROuevZnueYBX8n3yr-YOoFl9TW-bPacmb-xo44py9BV2HHL_y5vDUgBKkz-IAz1Tyhm0fQChSfiGhVs3vCxIdP610HHoroo9yFrMt_ppTf6aKgoxhKtt48oN-UF9AQ52-jEmoKINsNrMnGy3FOVbIOFbEJahJBv-_fmQMYb348jH4nIXzRoGkWlQ977BSgl4.yp7JbkSaiAzDeBzkLOO3cifmq_s2txh9GBLTj_V6ZxA&dib_tag=se&keywords=lego&qid=1766881940&refinements=p_36%3A3500-&rnid=389218011&sprefix=lego%2Caps%2C200&sr=8-27",
+    image: "paris.jpg",
+    imageFit: "cover"
   },
   {
-    id: "wired-headset",
-    name: "Casque filaire",
-    description: "Audio clair, sans recharge.",
-    category: "tech",
-    price: 49,
-    link: "#"
+    id: "ghost-of-tsushima",
+    name: "Ghost of Tsushima Director's Cut (PS5)",
+    description: "Un jeu d'action-aventure en monde ouvert inspire du Japon feodal : combats au katana ultra fluides, infiltration, exploration poetique du pays des vents, extension Iki incluse et mode coop Legendes pour varier les plaisirs.",
+    category: "loisirs",
+    price: 50,
+    link: "https://www.amazon.fr/action-aventure-Standard-Physique-Fran%C3%A7ais-PlayStation/dp/B0F6YQYCT3?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1OVEM70EKEJ4K&dib=eyJ2IjoiMSJ9._ctBkQE7nMbxBIlLPJzAsSZUvdjuvB07FMMD7Lppo04bsWkfH-flMx4M3tucYHpLCLOLgJI7UYt_MEeA5hc9iPVjgW88LVxY0U0ABF3uIBoUdau5pEM6Yyh7oeQOyraRlEihCmN93eawNr8UFvshacUDcnL5Eua9wXA26077yCrrqsmqf8BBzZ_boEhP9-vUVdtoRB07Qtk_c57fTqDHk0Ev28-Bt7-EEGTWFt6uh2mQPxF9IUT8J9B3Laah6OKQfUZMFH_nm2f7Kd3ANYNpEfof0YZjFKKXf5dpRJA8zys.-MNzqEOqLRcQZXlHfX3BMv4PuNkNi0dQP9XS8tu2ymM&dib_tag=se&keywords=jeux+video&qid=1766878875&refinements=p_36%3A-7600&rnid=389244011&sprefix=jeux+video%2Caps%2C204&sr=8-22",
+    image: "gost%20of%20yuteil.jpg",
+    imageFit: "cover"
   },
   {
     id: "board-game",
-    name: "Jeu de societe",
-    description: "Une soiree simple et fun.",
+    name: "Set d'echecs complet + minuteur",
+    description: "Echiquier pliable, pieces magnetiques et timer inclus pour lancer des parties serieuses ou rapides des la sortie de la boite.",
     category: "loisirs",
-    price: 35,
-    link: "#"
+    price: 49,
+    link: "https://www.amazon.fr/DOJA-Barcelona-Echiquier-Minuterie-Magnetique/dp/B09S16KHSF?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=373XTDHXXHY9W&dib=eyJ2IjoiMSJ9.IS0FJ9R-baphbs9BoMtyDTmEbqfbZhn2vTw1nqtgBhfjMRnuw_ApEXXVxWo5PXVX2aJz0fcVu9RfZs1U0FNtkIWmBF5DZaZaOGpoKzPsqRU7gSvySPn2bPdQB65F60N0MDxZ0WaKKLqVRdSIB1OqWoXVW2FPVZzE2a3sjrXDa5ifrQzntPAbgGP9we-M-oOqHzcg8VHZaXJTh8Gl-3XFJcYOEu7prSEOznPOBcM2WN52ntFaJ76DOXmeAiyPcgFF9pEly2PoNvt_0drAP7x8AE9NpZ9UqSEqfH04jq2AWhI.aPXEGVKlI4rWSwxAHXZyNuJrn5cL-DcEU-8IVtfiKY0&dib_tag=se&keywords=jeu+plus+de+50%E2%82%AC&qid=1766877848&sprefix=jeu+plus+de+50+%2Caps%2C201&sr=8-24",
+    image: "set%20d%27echec%20complet.jpg",
+    imageFit: "cover"
   },
   {
     id: "echo-spot",
