@@ -780,10 +780,12 @@ input {
     gap: 0.6rem;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
   }
 
   .brand {
     order: 1;
+    margin-left: 0;
   }
 
   .btn-login {
