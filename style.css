@@ -803,8 +803,8 @@ input {
     order: 4;
     width: 100%;
     display: flex;
-    gap: 0.4rem;
-    padding: 0.2rem 0 0.1rem;
+    gap: 0.25rem;
+    padding: 0.1rem 0 0.05rem;
     justify-content: flex-start;
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -818,11 +818,13 @@ input {
   .main-nav a {
     flex: 1 1 0;
     text-align: center;
-    padding: 0.4rem 0.5rem;
-    font-size: 0.9rem;
-    background: transparent;
-    border: 1px solid #eadfd3;
+    padding: 0.32rem 0.4rem;
+    font-size: 0.82rem;
+    background: #fffaf4;
+    border: 1px solid #efe3d6;
     box-shadow: none;
+    min-width: 0;
+    white-space: nowrap;
   }
 
   .main-nav a.active,
