@@ -551,6 +551,19 @@ select:focus-visible {
   background: #f1dfcd;
 }
 
+.btn-login {
+  background: var(--accent);
+  color: #fff;
+  padding: 0.55rem 0.9rem;
+  border: 1px solid var(--accent);
+  box-shadow: 0 10px 20px rgba(199, 122, 75, 0.2);
+  white-space: nowrap;
+}
+
+.btn-login:hover {
+  background: var(--accent-hover);
+}
+
 .fav {
   width: 44px;
   height: 44px;
@@ -765,10 +778,19 @@ input {
 @media (max-width: 540px) {
   .header-inner {
     gap: 0.6rem;
-    flex-direction: row;
-    align-items: center;
     flex-wrap: wrap;
-    justify-content: space-between;
+    align-items: center;
+  }
+
+  .brand {
+    order: 1;
+  }
+
+  .btn-login {
+    order: 2;
+    padding: 0.5rem 0.8rem;
+    font-size: 0.95rem;
+    margin-left: auto;
   }
 
   .header-search-inline {
@@ -777,19 +799,15 @@ input {
     max-width: 100%;
   }
 
-  .brand {
-    order: 1;
-  }
-
   .main-nav {
-    order: 2;
-    flex: 1 1 auto;
-    display: inline-flex;
-    gap: 0.35rem;
-    margin-left: auto;
-    padding-bottom: 0.2rem;
+    order: 4;
+    width: 100%;
+    display: flex;
+    gap: 0.4rem;
+    padding: 0.2rem 0 0.1rem;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
     overflow-x: auto;
-    align-items: center;
     scrollbar-width: none;
   }
 
@@ -798,18 +816,20 @@ input {
   }
 
   .main-nav a {
-    flex: 0 0 auto;
+    flex: 1 1 0;
     text-align: center;
-    padding: 0.38rem 0.55rem;
+    padding: 0.4rem 0.5rem;
     font-size: 0.9rem;
-    white-space: nowrap;
+    background: transparent;
+    border: 1px solid #eadfd3;
+    box-shadow: none;
   }
 
-  .main-nav a:last-child {
-    margin-left: auto;
-    flex: 0 0 auto;
-    font-size: 0.9rem;
-    padding: 0.35rem 0.5rem;
+  .main-nav a.active,
+  .main-nav a:hover {
+    background: #fffaf4;
+    border-color: #e4d6c7;
+    box-shadow: none;
   }
 
   .search-bar {
