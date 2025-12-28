@@ -793,13 +793,25 @@ input {
 
   .budget-grid,
   .budget-grid.compact {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    display: flex;
+    overflow-x: auto;
     gap: 0.6rem;
+    padding-bottom: 0.2rem;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+  .budget-grid::-webkit-scrollbar,
+  .budget-grid.compact::-webkit-scrollbar {
+    display: none;
   }
 
   .budget-card {
+    flex: 0 0 58%;
+    min-width: 150px;
     padding: 1rem;
     font-size: 1.1rem;
+    scroll-snap-align: start;
   }
 
   .cards-grid {
