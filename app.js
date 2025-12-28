@@ -27,6 +27,15 @@
     image: "bougie.jpg"
   },
   {
+    id: "powerbank-12000",
+    name: "Batterie externe 12000 mAh affichage numerique",
+    description: "Batterie portable 12000 mAh avec ecran digital pour suivre le niveau restant, deux sorties USB pour charger deux appareils a la fois et un format compact a glisser dans un sac pour ne jamais tomber en panne.",
+    category: "tech",
+    price: 10,
+    link: "https://www.amazon.fr/Batterie-12000mAh-Chargeur-Affichage-Num%C3%A9rique/dp/B0F21BJNZK?crid=20ZHP5LD00WL5&dib=eyJ2IjoiMSJ9.scXGXeZBVWbaBHS9xpi_JDM6xrUg4OZV6rcv-I21xuhOQby69JnoHFHdP_5v-P5ZRsfQTkRXpZ05c-apOSlx3lJ3P3KgZly6iEBr0KrdY4H5uEkenzvSogiX55XdGq2meOQdiAiAAvB6rfG0xfRp2o1ZGUTYRsZ58sXhQIMT4dkCFr0ll0Vk0NP_HzFr9alUspVVfQ0VZN3BJ6VyUzgmCOllMM7sIi5WUupy1cb8RRIa8jhpfziFRUmnD75QvYgmZa5SxK_3gSOQzIsYFwuEH3OcHXwP1KiNqhbNWFDUoIQ.FWkjIPg9tadEXgNjaniZbpdWKRERelggxDoN_HHnml4&dib_tag=se&keywords=batterie+externe&qid=1766920194&sprefix=batterie%2Caps%2C242&sr=8-13",
+    image: "batterie%20externe.jpg"
+  },
+  {
     id: "mini-notebook",
     name: "Lot de 3 Carnets Hokusai - Carnet de Notes A6",
     description: "Un lot de carnets elegants inspires des oeuvres emblematiques de Hokusai. Leur format A6 est parfait pour noter des idees, dessiner ou ecrire au quotidien. Un cadeau artistique et pratique, ideal pour les amateurs d'art et de papeterie raffinee.",
