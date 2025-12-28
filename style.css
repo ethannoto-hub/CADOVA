@@ -105,9 +105,10 @@ select:focus-visible {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 80px;
+  min-height: 80px;
+  padding: 0.6rem 0;
   gap: 1rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .header-search {
@@ -132,7 +133,7 @@ select:focus-visible {
 
 .header-search-inline {
   flex: 1 1 320px;
-  max-width: 520px;
+  max-width: 560px;
 }
 
 .search-bar input {
@@ -551,19 +552,6 @@ select:focus-visible {
   background: #f1dfcd;
 }
 
-.btn-login {
-  background: var(--accent);
-  color: #fff;
-  padding: 0.55rem 0.9rem;
-  border: 1px solid var(--accent);
-  box-shadow: 0 10px 20px rgba(199, 122, 75, 0.2);
-  white-space: nowrap;
-}
-
-.btn-login:hover {
-  background: var(--accent-hover);
-}
-
 .fav {
   width: 44px;
   height: 44px;
@@ -762,7 +750,7 @@ input {
   .header-inner {
     flex-direction: column;
     align-items: stretch;
-    height: auto;
+    min-height: 0;
     padding: 0.8rem 0;
   }
 
@@ -854,36 +842,10 @@ input {
 
 @media (max-width: 540px) {
   .header-inner {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-areas:
-      "logo login"
-      "search search"
-      "nav nav";
-    align-items: center;
     gap: 0.6rem;
   }
 
-  .brand {
-    grid-area: logo;
-    margin-left: 0;
-  }
-
-  .btn-login {
-    grid-area: login;
-    justify-self: end;
-    padding: 0.5rem 0.8rem;
-    font-size: 0.95rem;
-  }
-
-  .header-search-inline {
-    grid-area: search;
-    width: 100%;
-    max-width: 100%;
-  }
-
   .main-nav {
-    grid-area: nav;
     width: 100%;
     display: flex;
     gap: 0.25rem;
