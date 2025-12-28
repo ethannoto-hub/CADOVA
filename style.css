@@ -777,32 +777,36 @@ input {
 
 @media (max-width: 540px) {
   .header-inner {
-    gap: 0.6rem;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "logo login"
+      "search search"
+      "nav nav";
     align-items: center;
-    justify-content: space-between;
+    gap: 0.6rem;
   }
 
   .brand {
-    order: 1;
+    grid-area: logo;
     margin-left: 0;
   }
 
   .btn-login {
-    order: 2;
+    grid-area: login;
+    justify-self: end;
     padding: 0.5rem 0.8rem;
     font-size: 0.95rem;
-    margin-left: auto;
   }
 
   .header-search-inline {
-    order: 3;
+    grid-area: search;
     width: 100%;
     max-width: 100%;
   }
 
   .main-nav {
-    order: 4;
+    grid-area: nav;
     width: 100%;
     display: flex;
     gap: 0.25rem;
