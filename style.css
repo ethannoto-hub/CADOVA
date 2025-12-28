@@ -765,6 +765,8 @@ input {
 @media (max-width: 540px) {
   .header-inner {
     gap: 0.6rem;
+    flex-direction: row;
+    align-items: center;
   }
 
   .main-nav {
@@ -780,6 +782,13 @@ input {
     padding: 0.45rem 0.6rem;
     font-size: 0.95rem;
     white-space: nowrap;
+  }
+
+  .main-nav a:last-child {
+    margin-left: auto;
+    flex: 0 0 auto;
+    font-size: 0.9rem;
+    padding: 0.35rem 0.6rem;
   }
 
   .search-bar {
