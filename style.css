@@ -655,8 +655,60 @@ input {
 }
 
 .footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
   color: var(--text-muted);
   font-size: 0.95rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  align-items: center;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.footer-links a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.footer-tagline {
+  margin: 0;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  text-align: right;
+}
+
+.footer-contact-label {
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.footer-contact-link {
+  color: var(--text);
+  font-weight: 700;
+  text-decoration: underline dotted;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 4px;
+  opacity: 0.92;
+}
+
+.footer-contact-link:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
 }
 
 .count {
@@ -679,6 +731,31 @@ input {
 
 .auth-form input {
   width: 100%;
+}
+
+.legal-section {
+  padding: 2rem 0 3rem;
+  display: grid;
+  gap: 1.2rem;
+}
+
+.legal-card {
+  background: #fffaf4;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.25rem 1.35rem;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 0.4rem;
+}
+
+.legal-card h2 {
+  font-size: 1.1rem;
+}
+
+.legal-card p {
+  line-height: 1.6;
+  color: var(--text);
 }
 
 @media (max-width: 900px) {

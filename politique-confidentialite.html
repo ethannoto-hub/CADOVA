@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadova - Politique de confidentialite</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    (function () {
+      var isLocal = /localhost|127\.0\.0\.1/.test(location.hostname);
+      if (location.protocol === "http:" && !isLocal) {
+        location.href = location.href.replace("http:", "https:");
+      }
+    })();
+  </script>
+</head>
+<body class="page-legal">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Cadova">
+        <img class="brand-logo" src="logo-cadova.png" alt="" />
+        <span class="sr-only">Cadova</span>
+      </a>
+      <a class="btn btn-login" href="login.html">Se connecter</a>
+      <nav class="main-nav">
+        <a href="index.html">Accueil</a>
+        <a href="explore.html">Cadeaux</a>
+        <a href="favorites.html">Favoris</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container legal-section">
+      <div class="section-head">
+        <h1>Politique de confidentialite</h1>
+        <p class="muted">Description des donnees traitees, de leurs finalites et de vos droits (RGPD).</p>
+      </div>
+
+      <article class="legal-card">
+        <h2>Donnees collectees</h2>
+        <ul>
+          <li><strong>Formulaire de connexion :</strong> email et mot de passe saisis pour creer ou acceder a un compte (stockage et traitement a completer selon votre backend).</li>
+          <li><strong>Favoris :</strong> identifiant des produits sauvegardes localement dans votre navigateur via localStorage (aucun envoi au serveur).</li>
+          <li><strong>Navigation :</strong> donnees techniques standards des journaux de serveur (adresse IP, user-agent, pages consultees) a completer selon l'hebergeur.</li>
+        </ul>
+      </article>
+
+      <article class="legal-card">
+        <h2>Finalites et bases legales</h2>
+        <ul>
+          <li><strong>Acces au compte / authentification :</strong> permettre la connexion et la gestion du compte (execution du contrat ou mesures precontractuelles).</li>
+          <li><strong>Sauvegarde locale des favoris :</strong> faciliter la reprise de navigation (interet legitime, aucune transmission externe).</li>
+          <li><strong>Securite et maintenance :</strong> prevenir les abus et assurer la disponibilite du service (interet legitime).</li>
+        </ul>
+      </article>
+
+      <article class="legal-card">
+        <h2>Duree de conservation</h2>
+        <ul>
+          <li><strong>Donnees de compte :</strong> conserver uniquement tant que le compte est actif (precisez la duree et les purges automatiques lorsque le backend est en place).</li>
+          <li><strong>Favoris locaux :</strong> stockes dans votre navigateur jusqu'a suppression par l'utilisateur (bouton de suppression des favoris ou effacement du stockage local).</li>
+          <li><strong>Logs techniques :</strong> a completer selon l'hebergeur (pratique courante : 6 mois max sauf obligation legale).</li>
+        </ul>
+      </article>
+
+      <article class="legal-card">
+        <h2>Destinataires</h2>
+        <p>Les donnees sont traitees par l'equipe Cadova et ses sous-traitants techniques (hebergeur, eventuels prestataires de mesure d'audience si actives). Aucun transfert en dehors de l'UE sans garanties adequates.</p>
+      </article>
+
+      <article class="legal-card">
+        <h2>Cookies et traceurs</h2>
+        <p>Aucun cookie publicitaire ou de mesure d'audience n'est deploye par defaut. Les favoris sont stockes en localStorage (pas de cookie). Si vous activez des outils d'analyse ou des traceurs tiers, mettez a jour cette section et ajoutez une banniere de consentement conforme (CNIL).</p>
+      </article>
+
+      <article class="legal-card">
+        <h2>Vos droits</h2>
+        <p>Vous disposez des droits d'acces, de rectification, d'opposition, de limitation, d'effacement et de portabilite, dans les conditions prevues par le RGPD. Pour exercer vos droits, contactez <a href="mailto:contact@cadova.fr">contact@cadova.fr</a>. Vous pouvez aussi introduire une reclamation aupres de la CNIL.</p>
+      </article>
+
+      <article class="legal-card">
+        <h2>Contact RGPD</h2>
+        <p><strong>Contact principal :</strong> <a href="mailto:contact@cadova.fr">contact@cadova.fr</a></p>
+        <p><strong>DPO (si designe) :</strong> a completer</p>
+      </article>
+
+      <article class="legal-card">
+        <h2>Securite et HTTPS</h2>
+        <p>Le site doit etre servi exclusivement en HTTPS avec un certificat SSL valide. Une redirection automatique est appliquee vers HTTPS en production. Assurez-vous que l'hebergeur force le HTTPS et active le HSTS.</p>
+      </article>
+
+      <p class="muted">Derniere mise a jour : 28 decembre 2025.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-tagline">Cadova vous aide a choisir vite, sans surcharge.</p>
+      <nav class="footer-links" aria-label="Liens utilitaires">
+        <a href="mentions-legales.html">Mentions legales</a>
+        <a href="politique-confidentialite.html">Politique de confidentialite</a>
+        <a href="mailto:contact@cadova.fr">Contact</a>
+      </nav>
+      <div class="footer-contact">
+        <span class="footer-contact-label">Contact</span>
+        <a class="footer-contact-link" href="mailto:contact@cadova.fr">contact@cadova.fr</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
