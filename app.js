@@ -113,7 +113,7 @@
     id: "ghost-of-tsushima",
     name: "Ghost of Tsushima Director's Cut (PS5)",
     description: "Un jeu d'action-aventure en monde ouvert inspire du Japon feodal : combats au katana ultra fluides, infiltration, exploration poetique du pays des vents, extension Iki incluse et mode coop Legendes pour varier les plaisirs.",
-    category: "loisirs",
+    category: "gaming",
     price: 50,
     link: "https://www.amazon.fr/action-aventure-Standard-Physique-Fran%C3%A7ais-PlayStation/dp/B0F6YQYCT3?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1OVEM70EKEJ4K&dib=eyJ2IjoiMSJ9._ctBkQE7nMbxBIlLPJzAsSZUvdjuvB07FMMD7Lppo04bsWkfH-flMx4M3tucYHpLCLOLgJI7UYt_MEeA5hc9iPVjgW88LVxY0U0ABF3uIBoUdau5pEM6Yyh7oeQOyraRlEihCmN93eawNr8UFvshacUDcnL5Eua9wXA26077yCrrqsmqf8BBzZ_boEhP9-vUVdtoRB07Qtk_c57fTqDHk0Ev28-Bt7-EEGTWFt6uh2mQPxF9IUT8J9B3Laah6OKQfUZMFH_nm2f7Kd3ANYNpEfof0YZjFKKXf5dpRJA8zys.-MNzqEOqLRcQZXlHfX3BMv4PuNkNi0dQP9XS8tu2ymM&dib_tag=se&keywords=jeux+video&qid=1766878875&refinements=p_36%3A-7600&rnid=389244011&sprefix=jeux+video%2Caps%2C204&sr=8-22",
     image: "gost%20of%20yuteil.jpg",
