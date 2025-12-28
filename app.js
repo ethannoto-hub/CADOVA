@@ -328,6 +328,9 @@ function setupHome() {
 
   if (!buttons.length || !section || !list) return;
 
+  const defaultTitle = "Idees pour ce budget";
+  const defaultSubtitle = "4 cadeaux maximum.";
+
   function renderBudget(budgetKey) {
     const range = BUDGETS[budgetKey];
     const filtered = PRODUCTS.filter(item => filterByBudget(item, budgetKey));
@@ -343,6 +346,17 @@ function setupHome() {
   buttons.forEach(btn => {
     btn.setAttribute("aria-pressed", "false");
     btn.addEventListener("click", () => {
+      if (btn.classList.contains("active")) {
+        buttons.forEach(b => {
+          b.classList.remove("active");
+          b.setAttribute("aria-pressed", "false");
+        });
+        list.innerHTML = "";
+        title.textContent = defaultTitle;
+        subtitle.textContent = defaultSubtitle;
+        section.classList.remove("is-visible");
+        return;
+      }
       buttons.forEach(b => b.classList.remove("active"));
       buttons.forEach(b => b.setAttribute("aria-pressed", "false"));
       btn.classList.add("active");
