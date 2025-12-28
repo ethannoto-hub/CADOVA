@@ -107,8 +107,7 @@
     category: "loisirs",
     price: 50,
     link: "https://www.amazon.fr/LEGO-Architecture-Paris-Ville-lAmour/dp/B0FPXJ7MGT?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2GTPL5HSP9WZ3&dib=eyJ2IjoiMSJ9.crEGi9FXf_nh1Slx-kdl5hJe02OQCvf2IrNc7Y12uTQPf6HUiBYKzWO7rWcbjwYs0wz9EnwJ3SHsCwB6ZksmO0M5-GYmmBOM-_EOzc48cRrROuevZnueYBX8n3yr-YOoFl9TW-bPacmb-xo44py9BV2HHL_y5vDUgBKkz-IAz1Tyhm0fQChSfiGhVs3vCxIdP610HHoroo9yFrMt_ppTf6aKgoxhKtt48oN-UF9AQ52-jEmoKINsNrMnGy3FOVbIOFbEJahJBv-_fmQMYb348jH4nIXzRoGkWlQ977BSgl4.yp7JbkSaiAzDeBzkLOO3cifmq_s2txh9GBLTj_V6ZxA&dib_tag=se&keywords=lego&qid=1766881940&refinements=p_36%3A3500-&rnid=389218011&sprefix=lego%2Caps%2C200&sr=8-27",
-    image: "paris.jpg",
-    imageFit: "cover"
+    image: "paris.jpg"
   },
   {
     id: "ghost-of-tsushima",
