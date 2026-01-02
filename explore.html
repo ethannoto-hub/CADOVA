@@ -5,14 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cadova - Tous les cadeaux</title>
   <link rel="stylesheet" href="style.css" />
-  <script>
-    (function () {
-      var isLocal = /localhost|127\.0\.0\.1/.test(location.hostname);
-      if (location.protocol === "http:" && !isLocal) {
-        location.href = location.href.replace("http:", "https:");
-      }
-    })();
-  </script>
 </head>
 <body class="page-explore">
   <header class="site-header">
@@ -23,8 +15,9 @@
       </a>
       <nav class="main-nav">
         <a href="index.html">Accueil</a>
-        <a class="active" href="explore.html">Cadeaux</a>
+        <a class="active" href="explore.html">Tous les cadeaux</a>
         <a href="favorites.html">Favoris</a>
+        <a href="login.html">Se connecter</a>
       </nav>
     </div>
   </header>
@@ -70,16 +63,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p class="footer-tagline">Cadova vous aide a choisir vite, sans surcharge.</p>
-      <nav class="footer-links" aria-label="Liens utilitaires">
-        <a href="mentions-legales.html">Mentions legales</a>
-        <a href="politique-confidentialite.html">Politique de confidentialite</a>
-        <a href="mailto:contact@cadova.fr">Contact</a>
-      </nav>
-      <div class="footer-contact">
-        <span class="footer-contact-label">Contact</span>
-        <a class="footer-contact-link" href="mailto:contact@cadova.fr">contact@cadova.fr</a>
-      </div>
+      <p>Cadova vous aide a choisir vite, sans surcharge.</p>
     </div>
   </footer>
 
