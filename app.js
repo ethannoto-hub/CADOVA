@@ -1,4 +1,4 @@
-﻿const PRODUCTS = [
+const PRODUCTS = [
   {
     id: "card-minimal",
     name: "CELEBRATIONS - Boite Cadeau en Metal",
@@ -536,3 +536,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   updateFavoriteButtons();
 });
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("service-worker.js").catch(() => {});
+  });
+}
