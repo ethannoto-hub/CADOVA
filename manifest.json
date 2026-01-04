@@ -1,7 +1,8 @@
 {
     "name":  "Cadova",
     "short_name":  "Cadova",
-    "start_url":  "/",
+    "start_url":  "./",
+    "scope":  "./",
     "display":  "standalone",
     "background_color":  "#ffffff",
     "theme_color":  "#5b2b5f",
