@@ -9,6 +9,7 @@ const ASSETS = [
   "style.css",
   "app.js",
   "manifest.json",
+  "apple-touch-icon.png",
   "logo-cadova.png",
   "cadova.PNG",
   "assets/icons/icon-192.png",
